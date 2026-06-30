@@ -1,0 +1,551 @@
+{
+  "3d_bridge_segmentation": {
+    "id": "3d_bridge_segmentation",
+    "name": "SemanticBridge: 3D semantic segmentation of bridge dataset",
+    "tasks": [
+      "3D semantic segmentation"
+    ],
+    "homepage": "https://github.com/mvg-inatech/3d_bridge_segmentation",
+    "source_url": "https://doi.org/10.1016/j.dibe.2026.100912"
+  },
+  "HBD": {
+    "id": "HBD",
+    "name": "HBD: Hong Kong University Building Image Dataset",
+    "tasks": [
+      "Instance segmentation"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1016/j.autcon.2024.105558"
+  },
+  "aec-bench": {
+    "id": "aec-bench",
+    "name": "AEC-Bench: A Multimodal Benchmark for Agentic Systems in Architecture, Engineering, and Construction",
+    "tasks": [
+      "Agentic blueprint reading"
+    ],
+    "homepage": "https://github.com/nomic-ai/aec-bench",
+    "source_url": "https://doi.org/10.48550/arXiv.2603.29199"
+  },
+  "CUBIT-InSeg": {
+    "id": "CUBIT-InSeg",
+    "name": "CUBIT-InSeg Dataset",
+    "tasks": [
+      "Instance segmentation"
+    ],
+    "homepage": "https://github.com/BenyunZhao/CUBIT-InSeg",
+    "source_url": "https://doi.org/10.1016/j.autcon.2026.106980"
+  },
+  "BuildingSense": {
+    "id": "BuildingSense",
+    "name": "BuildingSense: Multimodal building function classification dataset",
+    "tasks": [
+      "Building function classification"
+    ],
+    "homepage": "https://doi.org/10.6084/m9.figshare.30645776.v2",
+    "source_url": "https://doi.org/10.5194/essd-18-2609-2026"
+  },
+  "NYSolarForecastLab": {
+    "id": "NYSolarForecastLab",
+    "name": "Solar PV power of 100 plants in NY",
+    "tasks": [
+      "Photovoltaic power forecasting"
+    ],
+    "homepage": "https://doi.org/10.7910/DVN/3VKAGM",
+    "source_url": "https://doi.org/10.1016/j.tra.2026.105040"
+  },
+  "ACID": {
+    "id": "ACID",
+    "name": "ACID: Advanced Construction Image Dataset Suite",
+    "tasks": [
+      "Object detection"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1061/(ASCE)CP.1943-5487.0000945"
+  },
+  "AIDCON": {
+    "id": "AIDCON",
+    "name": "AIDCON: Aerial Image Dataset for Construction",
+    "tasks": [
+      "Instance segmentation"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.3390/rs16173295"
+  },
+  "CHV": {
+    "id": "CHV",
+    "name": "CHV: Color Helmet and Vest Dataset",
+    "tasks": [
+      "Object detection (PPE)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.3390/s21103478"
+  },
+  "CHVG": {
+    "id": "CHVG",
+    "name": "CHVG: Color Hardhat, Vest, and Glass Dataset",
+    "tasks": [
+      "Object detection (PPE)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.7717/peerj-cs.999"
+  },
+  "ADPT_Dataset": {
+    "id": "ADPT_Dataset",
+    "name": "ADPT: Agent-based Defect Pattern Tagger (ADPT) Dataset",
+    "tasks": [
+      "Defect classification (automated annotation)"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/abs/2510.00603"
+  },
+  "AEC_Objects_in_IFC-based_BIM": {
+    "id": "AEC_Objects_in_IFC-based_BIM",
+    "name": "AEC Objects in IFC-based BIM Dataset",
+    "tasks": [
+      "BIM object classification"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1061/(ASCE)CP.1943-5487.0001012"
+  },
+  "BD3": {
+    "id": "BD3",
+    "name": "BD3: Building Defects Detection Dataset",
+    "tasks": [
+      "Building defect classification"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1145/3671127.3698789"
+  },
+  "CDE": {
+    "id": "CDE",
+    "name": "CDE: Construction dust emissions dataset",
+    "tasks": [
+      "Object detection (dust emissions)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1108/SASBE-04-2021-0066"
+  },
+  "CISOL": {
+    "id": "CISOL",
+    "name": "CISOL: Construction Industry Steel Ordering List (CISOL) Dataset",
+    "tasks": [
+      "Table structure recognition"
+    ],
+    "homepage": "",
+    "source_url": "https://openaccess.thecvf.com/content/WACV2025/html/Tschirschwitz_CISOL_An_Open_and_Extensible_Dataset_for_Table_Structure_Recognition_WACV_2025_paper.html"
+  },
+  "GlobalBuildingAtlas": {
+    "id": "GlobalBuildingAtlas",
+    "name": "GlobalBuildingAtlas",
+    "tasks": [
+      "Building height/volume estimation (3D building models)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.5194/essd-17-6647-2025"
+  },
+  "BrickNet": {
+    "id": "BrickNet",
+    "name": "BrickNet",
+    "tasks": [
+      "Structural stability classification (brick wall designs)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.3390/buildings15224041"
+  },
+  "Kenki-Posi": {
+    "id": "Kenki-Posi",
+    "name": "kenki-posi dataset",
+    "tasks": [
+      "Visual SLAM (construction machine positioning)"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/abs/2101.06563"
+  },
+  "DrafterBench": {
+    "id": "DrafterBench",
+    "name": "DrafterBench",
+    "tasks": [
+      "LLM agent drawing-revision (function calling)"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/abs/2507.11527"
+  },
+  "MSD": {
+    "id": "MSD",
+    "name": "Modified Swiss Dwellings (MSD) Dataset",
+    "tasks": [
+      "Floor plan generation"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/html/2407.10121v3"
+  },
+  "structgan": {
+    "id": "structgan",
+    "name": "Architectural-structural Design Pairs",
+    "tasks": [
+      "Structural shear wall layout generation"
+    ],
+    "homepage": "",
+    "source_url": "http://www.luxinzheng.net/AI-Papers/2021-Liao-AIC.htm"
+  },
+  "LOD4-Building-Image-Modeling": {
+    "id": "LOD4-Building-Image-Modeling",
+    "name": "Dataset for generation of LOD4 models for buildings",
+    "tasks": [
+      "LOD4 building model generation (image-based)"
+    ],
+    "homepage": "",
+    "source_url": "https://infoscience.epfl.ch/entities/publication/4c66745a-8ace-471a-9911-57eebdf6ed02"
+  },
+  "ifc-bench": {
+    "id": "ifc-bench",
+    "name": "IFC-Bench v2: BIM Comprehension & Reasoning Benchmark",
+    "tasks": [
+      "Natural language information retrieval from BIM models"
+    ],
+    "homepage": "",
+    "source_url": "https://ec-3.org/publication/ec32025_265/"
+  },
+  "CMOT": {
+    "id": "CMOT",
+    "name": "CMOT Dataset",
+    "tasks": [
+      "Multi-object tracking"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1061/JCCEE5.CPENG-6178"
+  },
+  "CSeg": {
+    "id": "CSeg",
+    "name": "Conditional Change Segmentation dataset (CSeg)",
+    "tasks": [
+      "Scene change detection (text-conditioned binary change segmentation)"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/abs/2412.07612"
+  },
+  "ConRebSeg": {
+    "id": "ConRebSeg",
+    "name": "ConRebSeg",
+    "tasks": [
+      "Instance / semantic segmentation"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/abs/2407.09372"
+  },
+  "Hardhat-Wearing": {
+    "id": "Hardhat-Wearing",
+    "name": "Hardhat-Wearing Dataset",
+    "tasks": [
+      "Object detection (hardhat / no_hardhat)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.3390/s20071868"
+  },
+  "HangCon": {
+    "id": "HangCon",
+    "name": "HangCon Dataset: Hanging Objects in Construction Sites",
+    "tasks": [
+      "Object detection (hanging objects)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1061/JCCEE5.CPENG-6283"
+  },
+  "LEAD": {
+    "id": "LEAD",
+    "name": "LEAD1.0: Large-scale Energy Anomaly Detection (LEAD) Dataset",
+    "tasks": [
+      "Anomaly detection"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/pdf/2203.17256"
+  },
+  "OSHA-safety": {
+    "id": "OSHA-safety",
+    "name": "OSHA-driven Safety Dataset",
+    "tasks": [
+      "Object detection"
+    ],
+    "homepage": "",
+    "source_url": "http://www.itcon.org/papers/2025_57-ITcon-Mohy.pdf"
+  },
+  "Object-Detection-Construction": {
+    "id": "Object-Detection-Construction",
+    "name": "Construction Earthwork Site Dataset",
+    "tasks": [
+      "Object detection / Instance segmentation"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.3390/app15169000"
+  },
+  "MACO": {
+    "id": "MACO",
+    "name": "MACO: Material Counting in Construction",
+    "tasks": [
+      "Object detection"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1061/JCEMD4.COENG-17693"
+  },
+  "ROADWork": {
+    "id": "ROADWork",
+    "name": "ROADWork: Learning to Recognize, Observe, Analyze and Drive Through Work Zones",
+    "tasks": [
+      "Instance segmentation / Work zone perception"
+    ],
+    "homepage": "",
+    "source_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Ghosh_ROADWork_A_Dataset_and_Benchmark_for_Learning_to_Recognize_Observe_ICCV_2025_paper.pdf"
+  },
+  "PM-HMCW": {
+    "id": "PM-HMCW",
+    "name": "Proximity Monitoring for Human-Machine Collision Warning Dataset",
+    "tasks": [
+      "Monocular 3D object detection / Proximity monitoring"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/pdf/2305.17931"
+  },
+  "Rebar-Counting": {
+    "id": "Rebar-Counting",
+    "name": "Rebar counting detection",
+    "tasks": [
+      "Object detection"
+    ],
+    "homepage": "",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11295459/"
+  },
+  "SCUT-HEAD": {
+    "id": "SCUT-HEAD",
+    "name": "SCUT-HEAD Dataset",
+    "tasks": [
+      "Object detection (head detection)"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/abs/1803.09256"
+  },
+  "SODA": {
+    "id": "SODA",
+    "name": "SODA: Site Object Detection Dataset",
+    "tasks": [
+      "Object detection"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/abs/2202.09554"
+  },
+  "Safety-Harness": {
+    "id": "Safety-Harness",
+    "name": "Safety harness dataset",
+    "tasks": [
+      "Object detection (safety harness use)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1049/ipr2.12696"
+  },
+  "Steel-Cross-Section": {
+    "id": "Steel-Cross-Section",
+    "name": "Steel Cross-Section Image Dataset",
+    "tasks": [
+      "Object detection (oriented, steel material counting)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.3390/buildings14061661"
+  },
+  "TBBR": {
+    "id": "TBBR",
+    "name": "TBBR dataset: Thermal Bridges on Building Rooftops",
+    "tasks": [
+      "Object detection (thermal bridge detection)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1016/j.autcon.2022.104690"
+  },
+  "TTPLA": {
+    "id": "TTPLA",
+    "name": "TTPLA: An Aerial-Image Dataset for Detection and Segmentation of Transmission Towers and Power Lines",
+    "tasks": [
+      "Instance segmentation / object detection"
+    ],
+    "homepage": "",
+    "source_url": "https://openaccess.thecvf.com/content/ACCV2020/papers/Abdelfattah_TTPLA_An_Aerial-Image_Dataset_for_Detection_and_Segmentation_of_Transmission_ACCV_2020_paper.pdf"
+  },
+  "Small-Construction-Tools": {
+    "id": "Small-Construction-Tools",
+    "name": "Small-sized construction tool dataset",
+    "tasks": [
+      "Object detection (small-sized construction tools)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1016/j.autcon.2024.105415"
+  },
+  "UrbanTwin": {
+    "id": "UrbanTwin",
+    "name": "UCF UrbanTwin Dataverse",
+    "tasks": [
+      "3D object detection"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1109/OJITS.2026.3655581"
+  },
+  "bfa-yolo-dataset": {
+    "id": "bfa-yolo-dataset",
+    "name": "BFA-3D dataset: Building facade attachments",
+    "tasks": [
+      "Object detection"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/html/2409.04025v1"
+  },
+  "Visible-Dust": {
+    "id": "Visible-Dust",
+    "name": "Visible-Dust-Dataset",
+    "tasks": [
+      "Object detection"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1016/j.dibe.2023.100245"
+  },
+  "hook": {
+    "id": "hook",
+    "name": "Tower crane hook dataset",
+    "tasks": [
+      "Object detection"
+    ],
+    "homepage": "",
+    "source_url": "https://www.mdpi.com/2076-3417/15/10/5364"
+  },
+  "xBD": {
+    "id": "xBD",
+    "name": "xBD",
+    "tasks": [
+      "Building damage classification"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/abs/1911.09296"
+  },
+  "BuildingWorld": {
+    "id": "BuildingWorld",
+    "name": "BuildingWorld Dataset",
+    "tasks": [
+      "Building roof wireframe reconstruction"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/html/2511.06337v1"
+  },
+  "CDW-Seg": {
+    "id": "CDW-Seg",
+    "name": "CDW-Seg Dataset",
+    "tasks": [
+      "Semantic segmentation of construction and demolition waste"
+    ],
+    "homepage": "",
+    "source_url": "https://www.nature.com/articles/s41597-025-05243-x"
+  },
+  "ConstScene": {
+    "id": "ConstScene",
+    "name": "ConstScene Dataset",
+    "tasks": [
+      "Semantic segmentation"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/html/2312.16516v2"
+  },
+  "GOOSE-Ex": {
+    "id": "GOOSE-Ex",
+    "name": "GOOSE-Ex Dataset",
+    "tasks": [
+      "Semantic segmentation (2D image and 3D point cloud)"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/html/2409.18788v2"
+  },
+  "Fire-ART": {
+    "id": "Fire-ART",
+    "name": "Fire-ART: Firefighting asset recognition dataset",
+    "tasks": [
+      "Asset recognition and panoramic 3D reconstruction"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/abs/2511.01399"
+  },
+  "Rail3D": {
+    "id": "Rail3D",
+    "name": "Rail3D: Multi-Context Point Cloud Dataset for Railway Semantic Segmentation",
+    "tasks": [
+      "3D point cloud semantic segmentation"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.3390/infrastructures9040071"
+  },
+  "CML": {
+    "id": "CML",
+    "name": "Construction Motion Library (CML)",
+    "tasks": [
+      "Activity recognition"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.1038/s41597-022-01841-1"
+  },
+  "MINC-2500": {
+    "id": "MINC-2500",
+    "name": "MINC: Materials in Context Database",
+    "tasks": [
+      "Material classification"
+    ],
+    "homepage": "",
+    "source_url": "https://consensus.app/papers/details/e506fa56b8a4517b827ea8dc150908ea/?utm_source=claude_code"
+  },
+  "vtt-coniot": {
+    "id": "vtt-coniot",
+    "name": "VTT-ConIoT",
+    "tasks": [
+      "Worker activity recognition (IMU)"
+    ],
+    "homepage": "",
+    "source_url": "https://consensus.app/papers/details/0581a80057d7519a89e1e60e2a14ee4f/?utm_source=claude_code"
+  },
+  "VizArQA": {
+    "id": "VizArQA",
+    "name": "VizArQA",
+    "tasks": [
+      "Visual question answering (architectural simulation)"
+    ],
+    "homepage": "",
+    "source_url": "https://consensus.app/papers/details/cffac8d51f945aeb9691d124d55ca36f/?utm_source=claude_code"
+  },
+  "UAV-Construction": {
+    "id": "UAV-Construction",
+    "name": "UAV-acquired construction site image caption dataset",
+    "tasks": [
+      "Image captioning (UAV construction)"
+    ],
+    "homepage": "",
+    "source_url": "https://consensus.app/papers/details/c24d1fe7f897573188c1cf84da3a682c/?utm_source=claude_code"
+  },
+  "UGD": {
+    "id": "UGD",
+    "name": "UGD: Underground Garage Point Cloud Dataset",
+    "tasks": [
+      "Point cloud semantic segmentation"
+    ],
+    "homepage": "",
+    "source_url": "https://consensus.app/papers/details/d785489f2d7758309394827762a644da/?utm_source=claude_code"
+  },
+  "CTR": {
+    "id": "CTR",
+    "name": "CTR: Concrete Techniques and Roughness",
+    "tasks": [
+      "Concrete interface classification"
+    ],
+    "homepage": "",
+    "source_url": "https://consensus.app/papers/details/c56c348c7bc45a1d9c59ced944ba12b8/?utm_source=claude_code"
+  },
+  "TOPO-Loss-Crack": {
+    "id": "TOPO-Loss-Crack",
+    "name": "TOPO-Loss-Crack (Wild) crack segmentation dataset",
+    "tasks": [
+      "Crack segmentation"
+    ],
+    "homepage": "",
+    "source_url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/77065e6d-f8c3-4189-9d33-3fdbefd73d52/content"
+  }
+}
