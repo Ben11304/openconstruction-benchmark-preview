@@ -539,6 +539,240 @@
     "homepage": "",
     "source_url": "https://consensus.app/papers/details/c56c348c7bc45a1d9c59ced944ba12b8/?utm_source=claude_code"
   },
+  "IFCNet": {
+    "id": "IFCNet",
+    "name": "IFCNet",
+    "tasks": [
+      "IFC entity classification (BIM)"
+    ],
+    "homepage": "",
+    "source_url": "https://consensus.app/papers/details/7716e3c7ba735cb688357bb5af353418/?utm_source=claude_code"
+  },
+  "MOCS": {
+    "id": "MOCS",
+    "name": "MOCS",
+    "tasks": [
+      "Object detection (construction moving objects)"
+    ],
+    "homepage": "",
+    "source_url": "https://consensus.app/papers/details/c39b8ede19015462ae1fa7857c84969c/?utm_source=claude_code"
+  },
+  "BIMNet": {
+    "id": "BIMNet",
+    "name": "BIMNet",
+    "tasks": [
+      "BIMNet"
+    ],
+    "homepage": "",
+    "source_url": "https://consensus.app/papers/details/dfe50235fa985a72a3d12f0e83d152e8/?utm_source=claude_code"
+  },
+  "CODD": {
+    "id": "CODD",
+    "name": "CODD",
+    "tasks": [
+      "CODD"
+    ],
+    "homepage": "",
+    "source_url": "https://consensus.app/papers/details/cdb50e704e2454dfa89c4536d466da4e/?utm_source=claude_code"
+  },
+  "Earthmoving-Equipment": {
+    "id": "Earthmoving-Equipment",
+    "name": "Earthmoving-Equipment",
+    "tasks": [
+      "Earthmoving-Equipment"
+    ],
+    "homepage": "",
+    "source_url": "https://consensus.app/papers/details/dbab9f6507b552bdbc6a5e10ba418e13/"
+  },
+  "Construction-Equipment-Pose": {
+    "id": "Construction-Equipment-Pose",
+    "name": "Construction-Equipment-Pose",
+    "tasks": [
+      "2D full-body keypoint/pose estimation of construction equipment (excavators) from surveillance images"
+    ],
+    "homepage": "",
+    "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S092658051930634X"
+  },
+  "VL-Con": {
+    "id": "VL-Con",
+    "name": "VL-Con",
+    "tasks": [
+      "construction-scene zero-shot image classification (BCS dataset) + binary construction-semantic image classification"
+    ],
+    "homepage": "",
+    "source_url": "https://www.iaarc.org/publications/fulltext/145_ISARC_2024_Paper_243.pdf"
+  },
+  "Weak_and_Self_supervision": {
+    "id": "Weak_and_Self_supervision",
+    "name": "Weak_and_Self_supervision",
+    "tasks": [
+      "weakly- and self-supervised instance segmentation (domain-adaptive, far-field object monitoring)"
+    ],
+    "homepage": "",
+    "source_url": "https://yonsei.elsevierpure.com/en/publications/domain-adaptive-instance-segmentation-for-far-field-object-monito/ (abstract only); DOI https://doi.org/10.1016/j.autcon.2026.106772 (paywalled)"
+  },
+  "BridgeEQA": {
+    "id": "BridgeEQA",
+    "name": "BridgeEQA",
+    "tasks": [
+      "Open-vocabulary Embodied Question Answering (EQA) for bridge inspection (episodic-memory EQA)"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/html/2511.12676v1"
+  },
+  "ConstructionSite-10k": {
+    "id": "ConstructionSite-10k",
+    "name": "ConstructionSite-10k",
+    "tasks": [
+      "image captioning (construction site understanding)"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/pdf/2508.11011"
+  },
+  "DreamHouse": {
+    "id": "DreamHouse",
+    "name": "DreamHouse",
+    "tasks": [
+      "Physical generative reasoning - iterative agentic generation of structurally valid timber-frame structures (Blender Python code) from multi-view renders, evaluated under 3 protocols (Planner-Atomic / Planner-Reactive / Planner-Managed) x 2 input conditions (Frame = bare framing visible; Facade = framing occluded by cladding). Deterministic 10-test structural validation suite (LOD 350)."
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/html/2603.24866 (full text of arXiv:2603.24866v1)"
+  },
+  "SHEL5K": {
+    "id": "SHEL5K",
+    "name": "SHEL5K",
+    "tasks": [
+      "object detection (safety helmet detection, 6 classes: helmet, head with helmet, person with helmet, head, person without helmet, face)"
+    ],
+    "homepage": "",
+    "source_url": "https://www.mdpi.com/1424-8220/22/6/2315/htm"
+  },
+  "SODA-ktsh": {
+    "id": "SODA-ktsh",
+    "name": "SODA-ktsh",
+    "tasks": [
+      "image-captioning (construction scene visual-language description)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.3390/buildings15060959 (MDPI Buildings, open HTML, full text read via webReader)"
+  },
+  "Synthetic-Rebar": {
+    "id": "Synthetic-Rebar",
+    "name": "Synthetic-Rebar",
+    "tasks": [
+      "rebar instance segmentation (Mask R-CNN, ResNet-101-FPN)"
+    ],
+    "homepage": "",
+    "source_url": "https://doi.org/10.3390/buildings13030585 (MDPI Buildings, open HTML)"
+  },
+  "VideoCAD": {
+    "id": "VideoCAD",
+    "name": "VideoCAD",
+    "tasks": [
+      "Long-horizon 3D CAD UI action prediction (behavior cloning) + VideoCAD-VQA (3D/spatiotemporal reasoning over CAD videos)"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/html/2505.24838 (Tables 3, 4, 5); confirmed via Consensus search result [1] https://consensus.app/papers/details/66f38cea6e86503099c09e086cfe7374/"
+  },
+  "BDAChat": {
+    "id": "BDAChat",
+    "name": "BDAChat",
+    "tasks": [
+      "Object-level building damage assessment (instance segmentation + temporal VLM reasoning)"
+    ],
+    "homepage": "",
+    "source_url": "https://github.com/WangYong921/BDAChat (README); https://doi.org/10.1016/j.aei.2026.104320 (blocked/paywalled)"
+  },
+  "BMKG": {
+    "id": "BMKG",
+    "name": "BMKG",
+    "tasks": [
+      "Bridge maintenance decision-making (defect -> maintenance action recommendation) over the Bridge Maintenance Knowledge Graph (BMKG), evaluated via LLM + chain-of-thought reasoning"
+    ],
+    "homepage": "",
+    "source_url": "abstract_only (via web search snippets of paywalled ScienceDirect page)"
+  },
+  "CMA": {
+    "id": "CMA",
+    "name": "CMA",
+    "tasks": [
+      "unsafe construction worker action recognition (7 classes, 1595 video clips)"
+    ],
+    "homepage": "",
+    "source_url": "abstract via Consensus + ResearchGate abstract + GitHub README; full-text table NOT read (paywalled)"
+  },
+  "CPPE": {
+    "id": "CPPE",
+    "name": "CPPE",
+    "tasks": [
+      "PPE compliance detection (hardhat and safety-vest wear/no-wear) via pose-guided anchoring + shallow CNN classifiers"
+    ],
+    "homepage": "",
+    "source_url": "https://www.osti.gov/biblio/1809885 (abstract only); https://github.com/ruoxinx/PPE-Detection-Pose (methods/comparators only, no numbers)"
+  },
+  "Component_based_Machine_Learning_data": {
+    "id": "Component_based_Machine_Learning_data",
+    "name": "Component_based_Machine_Learning_data",
+    "tasks": [
+      "Building energy performance (heating load) time-series prediction across building shapes (Box/Random/Representative) under sparse training data"
+    ],
+    "homepage": "",
+    "source_url": "https://arxiv.org/pdf/2302.10784"
+  },
+  "SHWD": {
+    "id": "SHWD",
+    "name": "SHWD",
+    "tasks": [
+      "object detection (helmet wearing / non-wearing)"
+    ],
+    "homepage": "",
+    "source_url": "https://www.researchsquare.com/article/rs-3924274/latest.pdf"
+  },
+  "ConSLAM": {
+    "id": "ConSLAM",
+    "name": "ConSLAM",
+    "tasks": [
+      "SLAM trajectory evaluation on construction site sequences"
+    ],
+    "homepage": "",
+    "source_url": "Cambridge Apollo repository PDF (open access, accepted manuscript of JCCEE paper), https://www.repository.cam.ac.uk/items/693c260b-e145-4f01-ad88-d2031e4c0590 ; PDF: https://www.repository.cam.ac.uk/bitstreams/ae98fba2-c796-4632-93cc-64896a7e0c00/download"
+  },
+  "Construction-Activity-Scenes": {
+    "id": "Construction-Activity-Scenes",
+    "name": "Construction-Activity-Scenes",
+    "tasks": [
+      "image captioning"
+    ],
+    "homepage": "",
+    "source_url": "https://web.archive.org/web/2023/https://research.bond.edu.au/files/115220106/AM_Manifesting_construction_activity_scenes_via_image_captioning.pdf (PDF, 33 pp, Tables 6 and 8 extracted verbatim)"
+  },
+  "Construction-Material-Textual": {
+    "id": "Construction-Material-Textual",
+    "name": "Construction-Material-Textual",
+    "tasks": [
+      "Image classification of construction material conditions (7 classes: CMU wall, chiseled concrete, concrete, first coat plaster, gypsum, mesh, second coat plaster)"
+    ],
+    "homepage": "",
+    "source_url": "https://ascelibrary.org/doi/10.1061/JCCEE5.CPENG-5478"
+  },
+  "GDUT-HWD": {
+    "id": "GDUT-HWD",
+    "name": "GDUT-HWD",
+    "tasks": [
+      "hardhat wearing detection (5 classes: blue/white/yellow/red hardhat + none)"
+    ],
+    "homepage": "",
+    "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S092658051930264X (abstract+highlights only); https://github.com/wujixiu/helmet-detection (model list, no mAP numbers)"
+  },
+  "ThermalNet": {
+    "id": "ThermalNet",
+    "name": "ThermalNet",
+    "tasks": [
+      "thermal-image hand gesture classification (worker-robot collaboration)"
+    ],
+    "homepage": "",
+    "source_url": "https://research.polyu.edu.hk/en/publications/thermal-image-based-hand-gesture-recognition-for-worker-robot-col (abstract only); https://www.sciencedirect.com/science/article/pii/S1474034623000678 (paywalled)"
+  },
   "TOPO-Loss-Crack": {
     "id": "TOPO-Loss-Crack",
     "name": "TOPO-Loss-Crack (Wild) crack segmentation dataset",

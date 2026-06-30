@@ -6338,6 +6338,2221 @@
       "submission_policy": "Open: results compiled from published papers and public leaderboards."
     },
     {
+      "id": "ifcnet",
+      "name": "IFCNet: A Benchmark Dataset for IFC Entity Classification",
+      "task": "IFC entity classification (BIM)",
+      "dataset_id": "IFCNet",
+      "dataset_name": "IFCNet",
+      "page_title": "IFCNet: IFC Entity Classification",
+      "summary": "Reported classification performance on IFCNet. Source-paper abstract is qualitative; downstream point-cloud models evaluated on IFCNet.",
+      "source_url": "https://consensus.app/papers/details/7716e3c7ba735cb688357bb5af353418/?utm_source=claude_code",
+      "source_label": "Emunds et al. 2021 (source) + downstream",
+      "primary_metric_key": "accuracy",
+      "metric_columns": [
+        {
+          "key": "accuracy",
+          "label": "Accuracy",
+          "direction": "higher",
+          "precision": 2
+        }
+      ],
+      "results": [
+        {
+          "method": "Point-cloud DNN (5 IFC entities)",
+          "year": 2022,
+          "metrics": {
+            "accuracy": 0.84
+          },
+          "source_url": "https://consensus.app/papers/details/9acf5ddd04ff52488f9553f2dae53614/?utm_source=claude_code",
+          "source_label": "Lim et al. 2022 (downstream, on IFCNet)"
+        }
+      ],
+      "verified": false,
+      "_via": "consensus",
+      "notes": "Source paper (Emunds 2021) abstract qualitative; 0.84 from downstream Lim 2022.",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "mocs",
+      "name": "MOCS: Moving Objects in Construction Sites",
+      "task": "Object detection (construction moving objects)",
+      "dataset_id": "MOCS",
+      "dataset_name": "MOCS",
+      "page_title": "MOCS: Moving Objects in Construction Sites detection",
+      "summary": "Reported detection results on MOCS. Source paper (An et al. 2021) benchmarked 15 DNN detectors qualitatively; downstream YOLO models report numeric mAP/accuracy on MOCS.",
+      "source_url": "https://consensus.app/papers/details/c39b8ede19015462ae1fa7857c84969c/?utm_source=claude_code",
+      "source_label": "An et al. 2021 (source) + downstream",
+      "primary_metric_key": "map",
+      "metric_columns": [
+        {
+          "key": "map",
+          "label": "mAP [%]",
+          "direction": "higher",
+          "precision": 2
+        },
+        {
+          "key": "accuracy",
+          "label": "Accuracy [%]",
+          "direction": "higher",
+          "precision": 2
+        }
+      ],
+      "results": [
+        {
+          "method": "Improved YOLOv8 (Safaldin 2024)",
+          "year": 2024,
+          "metrics": {
+            "map": 90.0,
+            "accuracy": 90.0
+          },
+          "source_url": "https://consensus.app/papers/details/6fb987c81d7d5c3898d634f47541dfe1/?utm_source=claude_code",
+          "source_label": "Safaldin et al. 2024 (downstream on MOCS)"
+        },
+        {
+          "method": "YOLOv4-EFNB0 + context augmentation (Chen 2022)",
+          "year": 2022,
+          "metrics": {
+            "accuracy": 96.76
+          },
+          "source_url": "https://consensus.app/papers/details/5dec9f757263527bbe307889cabc7074/?utm_source=claude_code",
+          "source_label": "Chen et al. 2022 (downstream on MOCS)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus",
+      "notes": "Source paper abstract qualitative; numbers from downstream papers benchmarking on MOCS.",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "bimnet",
+      "name": "BIMNet",
+      "task": "BIMNet",
+      "dataset_id": "BIMNet",
+      "dataset_name": "BIMNet",
+      "page_title": "BIMNet",
+      "summary": "Reported benchmark results for BIMNet (Consensus abstract).",
+      "source_url": "https://consensus.app/papers/details/dfe50235fa985a72a3d12f0e83d152e8/?utm_source=claude_code",
+      "source_label": "Zou et al. 2026, Sensors (BIM-Guided Virtual-to-Real Framework)",
+      "primary_metric_key": "mIoU",
+      "metric_columns": [
+        {
+          "key": "mIoU",
+          "label": "mIoU (%)",
+          "direction": "higher",
+          "precision": 2
+        },
+        {
+          "key": "OA",
+          "label": "Overall Accuracy (%)",
+          "direction": "higher",
+          "precision": 2
+        },
+        {
+          "key": "mAcc",
+          "label": "Mean Accuracy (%)",
+          "direction": "higher",
+          "precision": 2
+        },
+        {
+          "key": "FWIoU",
+          "label": "FWIoU (%)",
+          "direction": "higher",
+          "precision": 2
+        },
+        {
+          "key": "kappa",
+          "label": "Cohen's kappa",
+          "direction": "higher",
+          "precision": 2
+        }
+      ],
+      "results": [
+        {
+          "method": "V2R Fusion (PCT+PointNet++)",
+          "year": 2026,
+          "metrics": {
+            "mIoU": 53.14,
+            "OA": 70.89,
+            "mAcc": 69.67,
+            "FWIoU": 54.75,
+            "kappa": 59.66
+          },
+          "source_url": "https://consensus.app/papers/details/dfe50235fa985a72a3d12f0e83d152e8/?utm_source=claude_code",
+          "source_label": "Zou et al. 2026, Sensors (BIM-Guided Virtual-to-Real Framework)"
+        }
+      ],
+      "verified": false,
+      "_via": "consensus-agent",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "codd",
+      "name": "CODD",
+      "task": "CODD",
+      "dataset_id": "CODD",
+      "dataset_name": "CODD",
+      "page_title": "CODD",
+      "summary": "Reported benchmark results for CODD (Consensus abstract).",
+      "source_url": "https://consensus.app/papers/details/cdb50e704e2454dfa89c4536d466da4e/?utm_source=claude_code",
+      "source_label": "Han et al. 2026, Scientific Reports (downstream, trained/tested on CODD)",
+      "primary_metric_key": "mAP@50",
+      "metric_columns": [
+        "mAP@50",
+        "Precision",
+        "Recall",
+        "F1-score"
+      ],
+      "results": [
+        {
+          "method": "YOLO-CEW (YOLOv8 + ConvNeXt V2 + EMA + WIoU v3)",
+          "year": 2026,
+          "metrics": {
+            "mAP@50": "98.13%",
+            "Precision": "96.84%",
+            "Recall": "95.95%",
+            "F1-score": "96.39%"
+          },
+          "source_url": "https://consensus.app/papers/details/cdb50e704e2454dfa89c4536d466da4e/?utm_source=claude_code",
+          "source_label": "Han et al. 2026, Scientific Reports (downstream, trained/tested on CODD)"
+        }
+      ],
+      "verified": false,
+      "_via": "consensus-agent",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "earthmoving-equipment",
+      "name": "Earthmoving-Equipment",
+      "task": "Earthmoving-Equipment",
+      "dataset_id": "Earthmoving-Equipment",
+      "dataset_name": "Earthmoving-Equipment",
+      "page_title": "Earthmoving-Equipment",
+      "summary": "Reported benchmark results for Earthmoving-Equipment (Consensus abstract).",
+      "source_url": "https://consensus.app/papers/details/dbab9f6507b552bdbc6a5e10ba418e13/",
+      "source_label": "source paper abstract (Roberts et al., 2019, Automation in Construction)",
+      "primary_metric_key": "AP (Average Precision)",
+      "metric_columns": [
+        "detection_AP_excavator",
+        "detection_AP_dump_truck",
+        "tracking_accuracy",
+        "tracking_precision",
+        "activity_accuracy_excavator",
+        "activity_accuracy_dump_truck"
+      ],
+      "results": [
+        {
+          "method": "CNN detector + HMM/GMM/SVM (Roberts et al., source paper)",
+          "year": 2019,
+          "metrics": {
+            "detection_AP_excavator": "97.43%",
+            "detection_AP_dump_truck": "75.29%",
+            "tracking_accuracy_cross_category": "81.94%",
+            "tracking_precision": "87.45%",
+            "activity_accuracy_excavator": "86.8%",
+            "activity_accuracy_dump_truck": "88.5%"
+          },
+          "source_url": "https://consensus.app/papers/details/dbab9f6507b552bdbc6a5e10ba418e13/",
+          "source_label": "source paper abstract (Roberts et al., 2019, Automation in Construction)"
+        }
+      ],
+      "verified": false,
+      "_via": "consensus-agent",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "construction-equipment-pose",
+      "name": "Construction-Equipment-Pose",
+      "task": "2D full-body keypoint/pose estimation of construction equipment (excavators) from surveillance images",
+      "dataset_id": "Construction-Equipment-Pose",
+      "dataset_name": "Construction-Equipment-Pose",
+      "page_title": "Construction-Equipment-Pose",
+      "summary": "Reported benchmark results for Construction-Equipment-Pose (Consensus+full-paper).",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S092658051930634X",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "PCK",
+      "metric_columns": [
+        {
+          "key": "NE",
+          "label": "Normalized Error (x10^-3)",
+          "direction": "lower",
+          "precision": 2
+        },
+        {
+          "key": "PCK",
+          "label": "Percentage of Correct Keypoints (%)",
+          "direction": "higher",
+          "precision": 2
+        },
+        {
+          "key": "AUC",
+          "label": "Area Under Curve (x10^-3)",
+          "direction": "higher",
+          "precision": 2
+        },
+        {
+          "key": "detection_speed_ms",
+          "label": "Detection speed (ms/image)",
+          "direction": "lower",
+          "precision": 0
+        }
+      ],
+      "results": [
+        {
+          "method": "Stacked Hourglass Network (HG)",
+          "year": 2020,
+          "metrics": {
+            "PCK": 91.19
+          },
+          "source_url": "https://doi.org/10.1016/j.autcon.2019.103016",
+          "source_label": "Abstract (Elsevier, paywalled)"
+        },
+        {
+          "method": "Cascaded Pyramid Network (CPN)",
+          "year": 2020,
+          "metrics": {
+            "PCK": 91.78
+          },
+          "source_url": "https://doi.org/10.1016/j.autcon.2019.103016",
+          "source_label": "Abstract (Elsevier, paywalled)"
+        },
+        {
+          "method": "Ensemble HG-CPN (with online data augmentation)",
+          "year": 2020,
+          "metrics": {
+            "NE": 14.57,
+            "PCK": 93.43,
+            "AUC": 39.72,
+            "detection_speed_ms": 125
+          },
+          "source_url": "https://doi.org/10.1016/j.autcon.2019.103016",
+          "source_label": "Abstract (Elsevier, paywalled)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent2",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "vl-con",
+      "name": "VL-Con",
+      "task": "construction-scene zero-shot image classification (BCS dataset) + binary construction-semantic image classification",
+      "dataset_id": "VL-Con",
+      "dataset_name": "VL-Con",
+      "page_title": "VL-Con",
+      "summary": "Reported benchmark results for VL-Con (Consensus+full-paper).",
+      "source_url": "https://www.iaarc.org/publications/fulltext/145_ISARC_2024_Paper_243.pdf",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "top-1 accuracy",
+      "metric_columns": [
+        "top-1 accuracy",
+        "top-3 accuracy"
+      ],
+      "results": [
+        {
+          "method": "Zero-shot CLIP (prompt: \"A photo of a {label}.\")",
+          "year": 2024,
+          "metrics": {
+            "top-1 accuracy": "59.39%",
+            "top-3 accuracy": "81.41%",
+            "eval_dataset": "BCS (104,484 images, 54 construction-site categories)",
+            "best_category_top-1": "Site vest 99.40%",
+            "worst_category_top-1": "U-steel 0%"
+          },
+          "source_url": "https://www.iaarc.org/publications/fulltext/145_ISARC_2024_Paper_243.pdf",
+          "source_label": "ISARC 2024 full text, Section 3.2"
+        },
+        {
+          "method": "Fully-supervised model (Cheng et al. [16])",
+          "year": 2023,
+          "metrics": {
+            "top-1 accuracy": "up to 94.7%",
+            "eval_dataset": "BCS buildings and construction sites dataset"
+          },
+          "source_url": "https://www.iaarc.org/publications/fulltext/145_ISARC_2024_Paper_243.pdf",
+          "source_label": "ISARC 2024 full text, Section 3.2 (citing Cheng et al. [16])"
+        },
+        {
+          "method": "ResNet-18 binary construction-semantic classifier (in-house, 25 epochs)",
+          "year": 2024,
+          "metrics": {
+            "validation accuracy": "73.63%",
+            "train_val_split": "80/20 (~5000 images)",
+            "input_size": "224x224",
+            "augmentation": "random crop, random horizontal flip"
+          },
+          "source_url": "https://www.iaarc.org/publications/fulltext/145_ISARC_2024_Paper_243.pdf",
+          "source_label": "ISARC 2024 full text, Section 4.2"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent2",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "weak-and-self-supervision",
+      "name": "Weak_and_Self_supervision",
+      "task": "weakly- and self-supervised instance segmentation (domain-adaptive, far-field object monitoring)",
+      "dataset_id": "Weak_and_Self_supervision",
+      "dataset_name": "Weak_and_Self_supervision",
+      "page_title": "Weak_and_Self_supervision",
+      "summary": "Reported benchmark results for Weak_and_Self_supervision (Consensus+full-paper).",
+      "source_url": "https://yonsei.elsevierpure.com/en/publications/domain-adaptive-instance-segmentation-for-far-field-object-monito/ (abstract only); DOI https://doi.org/10.1016/j.autcon.2026.106772 (paywalled)",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "Mask mAP",
+      "metric_columns": [
+        "Mask mAP",
+        "relative_gap_pct"
+      ],
+      "results": [
+        {
+          "method": "Proposed (SAM weak-supervision + Noisy Student self-training)",
+          "year": 2026,
+          "metrics": {
+            "Mask mAP": 72.27,
+            "improvement_range_pct": "3-63 across 7 target domains"
+          },
+          "source_url": "https://doi.org/10.1016/j.autcon.2026.106772",
+          "source_label": "abstract (Yonsei Pure portal)"
+        },
+        {
+          "method": "BoxSnake",
+          "year": 2026,
+          "metrics": {
+            "relative_gap_pct_vs_proposed": 18
+          },
+          "source_url": "https://doi.org/10.1016/j.autcon.2026.106772",
+          "source_label": "abstract (baseline comparator)"
+        },
+        {
+          "method": "BoxTeacher",
+          "year": 2026,
+          "metrics": {
+            "relative_gap_pct_vs_proposed": 25.95
+          },
+          "source_url": "https://doi.org/10.1016/j.autcon.2026.106772",
+          "source_label": "abstract (baseline comparator)"
+        },
+        {
+          "method": "PointWSSIS",
+          "year": 2026,
+          "metrics": {
+            "relative_gap_pct_vs_proposed": 48.78
+          },
+          "source_url": "https://doi.org/10.1016/j.autcon.2026.106772",
+          "source_label": "abstract (baseline comparator)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent2",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "bridgeeqa",
+      "name": "BridgeEQA",
+      "task": "Open-vocabulary Embodied Question Answering (EQA) for bridge inspection (episodic-memory EQA)",
+      "dataset_id": "BridgeEQA",
+      "dataset_name": "BridgeEQA",
+      "page_title": "BridgeEQA",
+      "summary": "Reported benchmark results for BridgeEQA (Consensus+full-paper).",
+      "source_url": "https://arxiv.org/html/2511.12676v1",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "Answer Correctness (LLM-as-a-judge, 0-1)",
+      "metric_columns": [
+        {
+          "key": "answer_correctness",
+          "label": "Answer Correctness (Gemini 2.5 Flash Lite)",
+          "direction": "higher_better",
+          "precision": 3
+        },
+        {
+          "key": "answer_correctness",
+          "label": "Answer Correctness (Gemini 2.5 Flash)",
+          "direction": "higher_better",
+          "precision": 3
+        },
+        {
+          "key": "answer_correctness",
+          "label": "Answer Correctness (Grok 4 Fast)",
+          "direction": "higher_better",
+          "precision": 3
+        },
+        {
+          "key": "image_citation_relevance",
+          "label": "Image Citation Relevance (Gemini 2.5 Flash Lite)",
+          "direction": "higher_better",
+          "precision": 3
+        },
+        {
+          "key": "image_citation_relevance",
+          "label": "Image Citation Relevance (Gemini 2.5 Flash)",
+          "direction": "higher_better",
+          "precision": 3
+        },
+        {
+          "key": "image_citation_relevance",
+          "label": "Image Citation Relevance (Grok 4 Fast)",
+          "direction": "higher_better",
+          "precision": 3
+        }
+      ],
+      "results": [
+        {
+          "method": "Multi-Frame VLM",
+          "year": 2025,
+          "metrics": {
+            "answer_correctness": {
+              "gemini_2.5_flash_lite": 0.507,
+              "gemini_2.5_flash": 0.484,
+              "grok_4_fast": 0.576
+            },
+            "image_citation_relevance": {
+              "gemini_2.5_flash_lite": 0.717,
+              "gemini_2.5_flash": 0.694,
+              "grok_4_fast": 0.687
+            }
+          },
+          "source_url": "https://arxiv.org/html/2511.12676v1",
+          "source_label": "BridgeEQA paper, Table 1 (Answer Correctness) & Table 2 (Image Citation Relevance)"
+        },
+        {
+          "method": "Socratic LLM w/ SG",
+          "year": 2025,
+          "metrics": {
+            "answer_correctness": {
+              "gemini_2.5_flash_lite": 0.542,
+              "gemini_2.5_flash": 0.588,
+              "grok_4_fast": 0.614
+            },
+            "image_citation_relevance": {
+              "gemini_2.5_flash_lite": 0.775,
+              "gemini_2.5_flash": 0.767,
+              "grok_4_fast": 0.838
+            }
+          },
+          "source_url": "https://arxiv.org/html/2511.12676v1",
+          "source_label": "BridgeEQA paper, Table 1 & Table 2"
+        },
+        {
+          "method": "Multi-Frame VLM w/ SG",
+          "year": 2025,
+          "metrics": {
+            "answer_correctness": {
+              "gemini_2.5_flash_lite": 0.581,
+              "gemini_2.5_flash": 0.548,
+              "grok_4_fast": 0.622
+            },
+            "image_citation_relevance": {
+              "gemini_2.5_flash_lite": 0.802,
+              "gemini_2.5_flash": 0.778,
+              "grok_4_fast": 0.833
+            }
+          },
+          "source_url": "https://arxiv.org/html/2511.12676v1",
+          "source_label": "BridgeEQA paper, Table 1 & Table 2"
+        },
+        {
+          "method": "EMVR VLM w/ SG Only",
+          "year": 2025,
+          "metrics": {
+            "answer_correctness": {
+              "gemini_2.5_flash_lite": 0.512,
+              "gemini_2.5_flash": 0.609,
+              "grok_4_fast": 0.638
+            },
+            "image_citation_relevance": {
+              "gemini_2.5_flash_lite": 0.798,
+              "gemini_2.5_flash": 0.836,
+              "grok_4_fast": 0.876
+            }
+          },
+          "source_url": "https://arxiv.org/html/2511.12676v1",
+          "source_label": "BridgeEQA paper, Table 1 & Table 2"
+        },
+        {
+          "method": "EMVR VLM w/ Images + SG",
+          "year": 2025,
+          "metrics": {
+            "answer_correctness": {
+              "gemini_2.5_flash_lite": 0.497,
+              "gemini_2.5_flash": 0.551,
+              "grok_4_fast": 0.648
+            },
+            "image_citation_relevance": {
+              "gemini_2.5_flash_lite": 0.849,
+              "gemini_2.5_flash": 0.803,
+              "grok_4_fast": 0.889
+            }
+          },
+          "source_url": "https://arxiv.org/html/2511.12676v1",
+          "source_label": "BridgeEQA paper, Table 1 & Table 2"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent3",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "constructionsite-10k",
+      "name": "ConstructionSite-10k",
+      "task": "image captioning (construction site understanding)",
+      "dataset_id": "ConstructionSite-10k",
+      "dataset_name": "ConstructionSite-10k",
+      "page_title": "ConstructionSite-10k",
+      "summary": "Reported benchmark results for ConstructionSite-10k (Consensus+full-paper).",
+      "source_url": "https://arxiv.org/pdf/2508.11011",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "CIDEr-D",
+      "metric_columns": [
+        "SPICE",
+        "CIDEr-D",
+        "METEOR",
+        "BERTScore",
+        "CLIPScore",
+        "avg_words_per_caption"
+      ],
+      "results": [
+        {
+          "method": "GPT4V (zero-shot)",
+          "year": 2025,
+          "metrics": {
+            "SPICE": 18.2,
+            "CIDEr-D": 120.5,
+            "METEOR": 33.7,
+            "BERTScore": 28.0,
+            "CLIPScore": 82.2,
+            "avg_words_per_caption": 119
+          },
+          "source_url": "https://arxiv.org/abs/2508.11011",
+          "source_label": "arXiv:2508.11011 Table 5"
+        },
+        {
+          "method": "GPT4V 5-shot",
+          "year": 2025,
+          "metrics": {
+            "SPICE": 23.1,
+            "CIDEr-D": 152.1,
+            "METEOR": 38.7,
+            "BERTScore": 33.5,
+            "CLIPScore": 82.1,
+            "avg_words_per_caption": 101
+          },
+          "source_url": "https://arxiv.org/abs/2508.11011",
+          "source_label": "arXiv:2508.11011 Table 5"
+        },
+        {
+          "method": "GPT4o 5-shot",
+          "year": 2025,
+          "metrics": {
+            "SPICE": 24.9,
+            "CIDEr-D": 169.9,
+            "METEOR": 39.4,
+            "BERTScore": 37.7,
+            "CLIPScore": 81.8,
+            "avg_words_per_caption": 80
+          },
+          "source_url": "https://arxiv.org/abs/2508.11011",
+          "source_label": "arXiv:2508.11011 Table 5"
+        },
+        {
+          "method": "MiniGPT4",
+          "year": 2025,
+          "metrics": {
+            "SPICE": 15.5,
+            "CIDEr-D": 73.2,
+            "METEOR": 28.3,
+            "BERTScore": 31.1,
+            "CLIPScore": 77.9,
+            "avg_words_per_caption": 60
+          },
+          "source_url": "https://arxiv.org/abs/2508.11011",
+          "source_label": "arXiv:2508.11011 Table 5"
+        },
+        {
+          "method": "LLaVA 7B",
+          "year": 2025,
+          "metrics": {
+            "SPICE": 12.8,
+            "CIDEr-D": 62.1,
+            "METEOR": 28.5,
+            "BERTScore": 26.4,
+            "CLIPScore": 78.6,
+            "avg_words_per_caption": 82
+          },
+          "source_url": "https://arxiv.org/abs/2508.11011",
+          "source_label": "arXiv:2508.11011 Table 5"
+        },
+        {
+          "method": "LLaVA 13B",
+          "year": 2025,
+          "metrics": {
+            "SPICE": 14.6,
+            "CIDEr-D": 69.2,
+            "METEOR": 29.8,
+            "BERTScore": 27.8,
+            "CLIPScore": 79.6,
+            "avg_words_per_caption": 84
+          },
+          "source_url": "https://arxiv.org/abs/2508.11011",
+          "source_label": "arXiv:2508.11011 Table 5"
+        },
+        {
+          "method": "LLaVA 13B 5-shot",
+          "year": 2025,
+          "metrics": {
+            "SPICE": 15.1,
+            "CIDEr-D": 70.5,
+            "METEOR": 30.8,
+            "BERTScore": 27.2,
+            "CLIPScore": 76.5,
+            "avg_words_per_caption": 101
+          },
+          "source_url": "https://arxiv.org/abs/2508.11011",
+          "source_label": "arXiv:2508.11011 Table 5"
+        },
+        {
+          "method": "Human annotation",
+          "year": 2025,
+          "metrics": {
+            "SPICE": null,
+            "CIDEr-D": null,
+            "METEOR": null,
+            "BERTScore": null,
+            "CLIPScore": 80.0,
+            "avg_words_per_caption": 49
+          },
+          "source_url": "https://arxiv.org/abs/2508.11011",
+          "source_label": "arXiv:2508.11011 Table 5"
+        },
+        {
+          "method": "MSCOCO SOTA (reference)",
+          "year": 2025,
+          "metrics": {
+            "SPICE": 27.0,
+            "CIDEr-D": 155.1,
+            "METEOR": 33.9,
+            "BERTScore": null,
+            "CLIPScore": null,
+            "avg_words_per_caption": null
+          },
+          "source_url": "https://arxiv.org/abs/2508.11011",
+          "source_label": "arXiv:2508.11011 Table 5 (MSCOCO benchmark reference)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent3",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "dreamhouse",
+      "name": "DreamHouse",
+      "task": "Physical generative reasoning - iterative agentic generation of structurally valid timber-frame structures (Blender Python code) from multi-view renders, evaluated under 3 protocols (Planner-Atomic / Planner-Reactive / Planner-Managed) x 2 input conditions (Frame = bare framing visible; Facade = framing occluded by cladding). Deterministic 10-test structural validation suite (LOD 350).",
+      "dataset_id": "DreamHouse",
+      "dataset_name": "DreamHouse",
+      "page_title": "DreamHouse",
+      "summary": "Reported benchmark results for DreamHouse (Consensus+full-paper).",
+      "source_url": "https://arxiv.org/html/2603.24866 (full text of arXiv:2603.24866v1)",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "Joint Pass Rate (fraction of structures satisfying both structural validity AND visual fidelity S>=0.6 simultaneously); best observed across frontier models = 7.1%",
+      "metric_columns": [
+        "Structural Pass Rate [0,1]",
+        "Visual Fidelity (mean alpha-weighted similarity score across 5 views)",
+        "Topological Fidelity (composite of Census accuracy C, Hungarian match M, Voxel IoU V; weights wC=0.3,wM=0.4,wV=0.3)",
+        "Joint Pass Rate [0,1]"
+      ],
+      "results": [
+        {
+          "method": "GPT-5",
+          "year": 2026,
+          "metrics": {
+            "Planner-Atomic_Frame_StructuralPassRate": 0.792,
+            "Planner-Atomic_Frame_VisualFidelity": 0.312,
+            "Planner-Atomic_Facade_StructuralPassRate": 0.637,
+            "Planner-Managed_Frame_StructuralPassRate": 0.333,
+            "Planner-Atomic_TopologicalFidelity_passed_vs_failed": "0.143 vs 0.131",
+            "IterativeRefinement_StructuralRetention_Final": 0.781,
+            "StepwiseWithVisualFeedback_Frame_JointPassRate_baseline": 0.0075,
+            "StepwiseWithVisualFeedback_Frame_JointPassRate_withfeedback": 0.0092,
+            "StepwiseWithVisualFeedback_JointPassRate_relative_gain": "+23%"
+          },
+          "source_url": "https://arxiv.org/html/2603.24866",
+          "source_label": "arXiv:2603.24866v1 Sec 4.1/4.2/9.1 (Table 1 / Table 2 / Table 5)"
+        },
+        {
+          "method": "Claude Opus 4.5",
+          "year": 2026,
+          "metrics": {
+            "Planner-Atomic_Frame_StructuralPassRate": 0.716,
+            "Planner-Atomic_Frame_VisualFidelity": 0.406,
+            "Planner-Atomic_Facade_StructuralPassRate": 0.779,
+            "Planner-Managed_Frame_StructuralPassRate": 0.713,
+            "Planner-Atomic_TopologicalFidelity_passed_vs_failed": "0.164 vs 0.149",
+            "IterativeRefinement_StructuralRetention_Final": 0.685,
+            "IterativeRefinement_VisualFidelity_delta_Final": 0.033,
+            "IterativeRefinement_TasksImproved_fraction": 0.703,
+            "StepwiseWithVisualFeedback_Frame_JointPassRate_baseline": 0.0308,
+            "StepwiseWithVisualFeedback_Frame_JointPassRate_withfeedback": 0.094,
+            "StepwiseWithVisualFeedback_JointPassRate_relative_gain": "+205%",
+            "StepwiseWithVisualFeedback_StructuralPassRate_delta_pp": 6.67,
+            "StepwiseWithVisualFeedback_VisualFidelity_relative_gain": "+3.7%"
+          },
+          "source_url": "https://arxiv.org/html/2603.24866",
+          "source_label": "arXiv:2603.24866v1 Sec 4.1/4.2/9.1 (Table 1 / Table 2 / Table 5)"
+        },
+        {
+          "method": "Gemini 3 Flash",
+          "year": 2026,
+          "metrics": {
+            "Planner-Atomic_Frame_StructuralPassRate": 0.454,
+            "Planner-Atomic_Frame_VisualFidelity": 0.376,
+            "Planner-Atomic_Facade_StructuralPassRate": 0.539,
+            "Planner-Atomic_Facade_VisualFidelity": 0.394,
+            "Planner-Managed_Frame_StructuralPassRate": 0.785,
+            "Planner-Managed_Frame_VisualFidelity": 0.313,
+            "Planner-Atomic_TopologicalFidelity_passed_vs_failed": "0.171 vs 0.175",
+            "IterativeRefinement_StructuralRetention_Final": 0.738,
+            "StepwiseWithVisualFeedback_Frame_JointPassRate_baseline": 0.0434,
+            "StepwiseWithVisualFeedback_Frame_JointPassRate_withfeedback": 0.089,
+            "StepwiseWithVisualFeedback_JointPassRate_relative_gain": "+105%",
+            "StepwiseWithVisualFeedback_StructuralPassRate_delta_pp": -4.45,
+            "StepwiseWithVisualFeedback_VisualPassFraction": "5.4% -> 13.3%"
+          },
+          "source_url": "https://arxiv.org/html/2603.24866",
+          "source_label": "arXiv:2603.24866v1 Sec 4.1/4.2/9.1 (Table 1 / Table 2 / Table 5)"
+        },
+        {
+          "method": "Qwen3.5-397B-A17B (open-source)",
+          "year": 2026,
+          "metrics": {
+            "Planner-Managed_StructuralPassRate_renderable_subset": 0.206,
+            "Planner-Managed_N_structures_renderable_out_of_1200": 247,
+            "Planner-Managed_MeanVisualSimilarity": 0.261,
+            "Planner-Managed_MedianVisualSimilarity": 0.22,
+            "Planner-Managed_PerView_Back_S2": 0.167,
+            "Planner-Managed_PerView_Diagonal_S5": 0.418,
+            "Planner-Managed_JointVisualPass_S>=0.3": 0.154,
+            "Planner-Managed_JointVisualPass_S>=0.4": 0.101,
+            "Planner-Managed_JointVisualPass_S>=0.6": 0.016
+          },
+          "source_url": "https://arxiv.org/html/2603.24866",
+          "source_label": "arXiv:2603.24866v1 Sec 9.2"
+        },
+        {
+          "method": "Qwen3-VL-8B-Instruct / Qwen3-VL-30B-A3B-Instruct / Kimi K2.5 (open-source)",
+          "year": 2026,
+          "metrics": {
+            "Planner-Managed_StructuralPassRate": 0.0,
+            "note": "0% structural pass rate; did not produce reliably executable Blender Python code"
+          },
+          "source_url": "https://arxiv.org/html/2603.24866",
+          "source_label": "arXiv:2603.24866v1 Sec 9.2"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent3",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "shel5k",
+      "name": "SHEL5K",
+      "task": "object detection (safety helmet detection, 6 classes: helmet, head with helmet, person with helmet, head, person without helmet, face)",
+      "dataset_id": "SHEL5K",
+      "dataset_name": "SHEL5K",
+      "page_title": "SHEL5K",
+      "summary": "Reported benchmark results for SHEL5K (Consensus+full-paper).",
+      "source_url": "https://www.mdpi.com/1424-8220/22/6/2315/htm",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "mAP@0.5 (mAP0.5)",
+      "metric_columns": [
+        "Precision",
+        "Recall",
+        "mAP0.5",
+        "F1",
+        "Training Time (hours)",
+        "Testing Time (s)",
+        "Parameters (Million)",
+        "Layers"
+      ],
+      "results": [
+        {
+          "method": "Faster-RCNN (Inception V2)",
+          "year": 2022,
+          "metrics": {
+            "Precision": 0.7808,
+            "Recall": 0.3862,
+            "mAP0.5": 0.3689,
+            "F1": 0.5167,
+            "Training_Time_hours": 55.6,
+            "Testing_Time_s": 0.084,
+            "Parameters_Million": 13.3,
+            "Layers": 48
+          },
+          "source_url": "https://www.mdpi.com/1424-8220/22/6/2315/htm",
+          "source_label": "SHEL5K paper, Table 8"
+        },
+        {
+          "method": "YOLOv3-tiny",
+          "year": 2022,
+          "metrics": {
+            "Precision": 0.7695,
+            "Recall": 0.4225,
+            "mAP0.5": 0.3779,
+            "F1": 0.5408,
+            "Training_Time_hours": 5.2,
+            "Testing_Time_s": 0.006,
+            "Parameters_Million": 8.7,
+            "Layers": 37
+          },
+          "source_url": "https://www.mdpi.com/1424-8220/22/6/2315/htm",
+          "source_label": "SHEL5K paper, Table 8"
+        },
+        {
+          "method": "YOLOv3",
+          "year": 2022,
+          "metrics": {
+            "Precision": 0.8509,
+            "Recall": 0.4482,
+            "mAP0.5": 0.417,
+            "F1": 0.5848,
+            "Training_Time_hours": 24.6,
+            "Testing_Time_s": 0.011,
+            "Parameters_Million": 61.6,
+            "Layers": 222
+          },
+          "source_url": "https://www.mdpi.com/1424-8220/22/6/2315/htm",
+          "source_label": "SHEL5K paper, Table 8"
+        },
+        {
+          "method": "YOLOv3-SPP",
+          "year": 2022,
+          "metrics": {
+            "Precision": 0.8851,
+            "Recall": 0.5848,
+            "mAP0.5": 0.5572,
+            "F1": 0.7032,
+            "Training_Time_hours": 24.6,
+            "Testing_Time_s": 0.012,
+            "Parameters_Million": 62.6,
+            "Layers": 225
+          },
+          "source_url": "https://www.mdpi.com/1424-8220/22/6/2315/htm",
+          "source_label": "SHEL5K paper, Table 8"
+        },
+        {
+          "method": "YOLOv4",
+          "year": 2022,
+          "metrics": {
+            "Precision": 0.925,
+            "Recall": 0.7798,
+            "mAP0.5": 0.7693,
+            "F1": 0.8449,
+            "Training_Time_hours": 11.2,
+            "Testing_Time_s": 0.014,
+            "Parameters_Million": 63.9,
+            "Layers": 488
+          },
+          "source_url": "https://www.mdpi.com/1424-8220/22/6/2315/htm",
+          "source_label": "SHEL5K paper, Table 8"
+        },
+        {
+          "method": "YOLOv4pacsp-x-mish",
+          "year": 2022,
+          "metrics": {
+            "Precision": 0.9195,
+            "Recall": 0.8036,
+            "mAP0.5": 0.7915,
+            "F1": 0.8567,
+            "Training_Time_hours": 14.5,
+            "Testing_Time_s": 0.014,
+            "Parameters_Million": 63.9,
+            "Layers": 488
+          },
+          "source_url": "https://www.mdpi.com/1424-8220/22/6/2315/htm",
+          "source_label": "SHEL5K paper, Table 8"
+        },
+        {
+          "method": "YOLOv5s",
+          "year": 2022,
+          "metrics": {
+            "Precision": 0.9205,
+            "Recall": 0.774,
+            "mAP0.5": 0.861,
+            "F1": 0.8397,
+            "Training_Time_hours": 0.3,
+            "Testing_Time_s": 0.018,
+            "Parameters_Million": 7.1,
+            "Layers": 224
+          },
+          "source_url": "https://www.mdpi.com/1424-8220/22/6/2315/htm",
+          "source_label": "SHEL5K paper, Table 8"
+        },
+        {
+          "method": "YOLOv5m",
+          "year": 2022,
+          "metrics": {
+            "Precision": 0.9251,
+            "Recall": 0.7851,
+            "mAP0.5": 0.8687,
+            "F1": 0.8488,
+            "Training_Time_hours": 2.7,
+            "Testing_Time_s": 0.022,
+            "Parameters_Million": 21.1,
+            "Layers": 308
+          },
+          "source_url": "https://www.mdpi.com/1424-8220/22/6/2315/htm",
+          "source_label": "SHEL5K paper, Table 8"
+        },
+        {
+          "method": "YOLOv5x",
+          "year": 2022,
+          "metrics": {
+            "Precision": 0.9188,
+            "Recall": 0.817,
+            "mAP0.5": 0.8826,
+            "F1": 0.8644,
+            "Training_Time_hours": 6.3,
+            "Testing_Time_s": 0.032,
+            "Parameters_Million": 87.2,
+            "Layers": 476
+          },
+          "source_url": "https://www.mdpi.com/1424-8220/22/6/2315/htm",
+          "source_label": "SHEL5K paper, Table 8"
+        },
+        {
+          "method": "YOLOR",
+          "year": 2022,
+          "metrics": {
+            "Precision": 0.9322,
+            "Recall": 0.8066,
+            "mAP0.5": 0.8828,
+            "F1": 0.8637,
+            "Training_Time_hours": 9.8,
+            "Testing_Time_s": 0.012,
+            "Parameters_Million": 36.9,
+            "Layers": 665
+          },
+          "source_url": "https://www.mdpi.com/1424-8220/22/6/2315/htm",
+          "source_label": "SHEL5K paper, Table 8 (best mAP0.5)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent3",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "soda-ktsh",
+      "name": "SODA-ktsh",
+      "task": "image-captioning (construction scene visual-language description)",
+      "dataset_id": "SODA-ktsh",
+      "dataset_name": "SODA-ktsh",
+      "page_title": "SODA-ktsh",
+      "summary": "Reported benchmark results for SODA-ktsh (Consensus+full-paper).",
+      "source_url": "https://doi.org/10.3390/buildings15060959 (MDPI Buildings, open HTML, full text read via webReader)",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "BLEU-4",
+      "metric_columns": [
+        "BLEU-1",
+        "BLEU-2",
+        "BLEU-3",
+        "BLEU-4",
+        "CIDEr",
+        "ROUGE_L"
+      ],
+      "results": [
+        {
+          "method": "ResNet101+LSTM+attention, beam size=1 (greedy)",
+          "year": 2025,
+          "metrics": {
+            "BLEU-1": 0.8087,
+            "BLEU-2": 0.7788,
+            "BLEU-3": 0.7569,
+            "BLEU-4": 0.7365,
+            "CIDEr": 4.9398,
+            "ROUGE_L": 0.8075
+          },
+          "source_url": "https://doi.org/10.3390/buildings15060959",
+          "source_label": "Table 4 (ablation on SODA-ktsh validation set)"
+        },
+        {
+          "method": "ResNet101+LSTM+attention, beam size=2",
+          "year": 2025,
+          "metrics": {
+            "BLEU-1": 0.8117,
+            "BLEU-2": 0.7817,
+            "BLEU-3": 0.7593,
+            "BLEU-4": 0.7383,
+            "CIDEr": 4.9398,
+            "ROUGE_L": 0.8075
+          },
+          "source_url": "https://doi.org/10.3390/buildings15060959",
+          "source_label": "Table 4 (ablation on SODA-ktsh validation set)"
+        },
+        {
+          "method": "ResNet101+LSTM+attention, beam size=3",
+          "year": 2025,
+          "metrics": {
+            "BLEU-1": 0.8155,
+            "BLEU-2": 0.7865,
+            "BLEU-3": 0.765,
+            "BLEU-4": 0.7448,
+            "CIDEr": 4.9719,
+            "ROUGE_L": 0.8093
+          },
+          "source_url": "https://doi.org/10.3390/buildings15060959",
+          "source_label": "Table 4 (ablation on SODA-ktsh validation set)"
+        },
+        {
+          "method": "ResNet101+LSTM+attention, beam size=4",
+          "year": 2025,
+          "metrics": {
+            "BLEU-1": 0.8156,
+            "BLEU-2": 0.7869,
+            "BLEU-3": 0.7654,
+            "BLEU-4": 0.7452,
+            "CIDEr": 4.9908,
+            "ROUGE_L": 0.8101
+          },
+          "source_url": "https://doi.org/10.3390/buildings15060959",
+          "source_label": "Table 4 (ablation on SODA-ktsh validation set)"
+        },
+        {
+          "method": "ResNet101+LSTM+attention, beam size=5 (proposed)",
+          "year": 2025,
+          "metrics": {
+            "BLEU-1": 0.8161,
+            "BLEU-2": 0.7872,
+            "BLEU-3": 0.7661,
+            "BLEU-4": 0.7464,
+            "CIDEr": 5.0255,
+            "ROUGE_L": 0.8106
+          },
+          "source_url": "https://doi.org/10.3390/buildings15060959",
+          "source_label": "Table 4 (ablation on SODA-ktsh validation set)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent3",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "synthetic-rebar",
+      "name": "Synthetic-Rebar",
+      "task": "rebar instance segmentation (Mask R-CNN, ResNet-101-FPN)",
+      "dataset_id": "Synthetic-Rebar",
+      "dataset_name": "Synthetic-Rebar",
+      "page_title": "Synthetic-Rebar",
+      "summary": "Reported benchmark results for Synthetic-Rebar (Consensus+full-paper).",
+      "source_url": "https://doi.org/10.3390/buildings13030585 (MDPI Buildings, open HTML)",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "IoU (paper also uses a comprehensive metric = harmonic mean of Accuracy, IoU, F1_Score)",
+      "metric_columns": [
+        "Accuracy",
+        "Precision",
+        "Recall",
+        "IoU",
+        "F1_Score"
+      ],
+      "results": [
+        {
+          "method": "Mask R-CNN M-1500-0 (1500 real / 0 synthetic)",
+          "year": 2023,
+          "metrics": {
+            "Accuracy": 0.935,
+            "Precision": 0.922,
+            "Recall": 0.809,
+            "IoU": 0.756,
+            "F1_Score": 0.86
+          },
+          "source_url": "https://doi.org/10.3390/buildings13030585",
+          "source_label": "Table 3, Prediction results of Epoch 50 weights (confidence=0.7)"
+        },
+        {
+          "method": "Mask R-CNN M-1500-750 (1500 real / 750 synthetic)",
+          "year": 2023,
+          "metrics": {
+            "Accuracy": 0.945,
+            "Precision": 0.996,
+            "Recall": 0.782,
+            "IoU": 0.78,
+            "F1_Score": 0.876
+          },
+          "source_url": "https://doi.org/10.3390/buildings13030585",
+          "source_label": "Table 3"
+        },
+        {
+          "method": "Mask R-CNN M-1500-1500 (1500 real / 1500 synthetic)",
+          "year": 2023,
+          "metrics": {
+            "Accuracy": 0.945,
+            "Precision": 0.992,
+            "Recall": 0.788,
+            "IoU": 0.784,
+            "F1_Score": 0.878
+          },
+          "source_url": "https://doi.org/10.3390/buildings13030585",
+          "source_label": "Table 3"
+        },
+        {
+          "method": "Mask R-CNN M-0-1500 (0 real / 1500 synthetic)",
+          "year": 2023,
+          "metrics": {
+            "Accuracy": 0.933,
+            "Precision": 0.99,
+            "Recall": 0.742,
+            "IoU": 0.736,
+            "F1_Score": 0.848
+          },
+          "source_url": "https://doi.org/10.3390/buildings13030585",
+          "source_label": "Table 3"
+        },
+        {
+          "method": "Mask R-CNN M-500-1000 (500 real / 1000 synthetic)",
+          "year": 2023,
+          "metrics": {
+            "Accuracy": 0.943,
+            "Precision": 0.996,
+            "Recall": 0.778,
+            "IoU": 0.775,
+            "F1_Score": 0.873
+          },
+          "source_url": "https://doi.org/10.3390/buildings13030585",
+          "source_label": "Table 3"
+        },
+        {
+          "method": "Mask R-CNN M-1000-500 (1000 real / 500 synthetic)",
+          "year": 2023,
+          "metrics": {
+            "Accuracy": 0.947,
+            "Precision": 0.993,
+            "Recall": 0.792,
+            "IoU": 0.788,
+            "F1_Score": 0.881
+          },
+          "source_url": "https://doi.org/10.3390/buildings13030585",
+          "source_label": "Table 3"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent3",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "videocad",
+      "name": "VideoCAD",
+      "task": "Long-horizon 3D CAD UI action prediction (behavior cloning) + VideoCAD-VQA (3D/spatiotemporal reasoning over CAD videos)",
+      "dataset_id": "VideoCAD",
+      "dataset_name": "VideoCAD",
+      "page_title": "VideoCAD",
+      "summary": "Reported benchmark results for VideoCAD (Consensus+full-paper).",
+      "source_url": "https://arxiv.org/html/2505.24838 (Tables 3, 4, 5); confirmed via Consensus search result [1] https://consensus.app/papers/details/66f38cea6e86503099c09e086cfe7374/",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "Perfectly Predicted Actions (%) overall and Chamfer success rate (CD<0.02) for behavior cloning; per-category accuracy (%) for VQA",
+      "metric_columns": [
+        "μcmd_mean_%",
+        "μparam_mean_%",
+        "PPA_mean_%",
+        "PPA_max_%",
+        "PPA_min_%",
+        "PPA_short_%",
+        "PPA_medium_%",
+        "PPA_long_%",
+        "chamfer_success_short_%",
+        "chamfer_success_medium_%",
+        "chamfer_success_long_%",
+        "chamfer_success_mean_%",
+        "mean_CD_short",
+        "mean_CD_medium",
+        "mean_CD_long",
+        "mean_CD_mean",
+        "invalid_mean_%",
+        "vqa_action_recognition_%",
+        "vqa_frame_ordering_%",
+        "vqa_extrusion_number_%",
+        "vqa_extrusion_comparison_%"
+      ],
+      "results": [
+        {
+          "method": "Pix2Act",
+          "benchmark": "Table 3 - Action prediction across difficulty",
+          "year": 2025,
+          "metrics": {
+            "μcmd_mean_%": 20.44,
+            "μparam_mean_%": 2.61,
+            "PPA_mean_%": 2.84,
+            "PPA_max_%": 22.03,
+            "PPA_min_%": 0.0,
+            "PPA_short_%": 2.28,
+            "PPA_medium_%": 2.63,
+            "PPA_long_%": 3.6
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 3"
+        },
+        {
+          "method": "Pearce et al.",
+          "benchmark": "Table 3 - Action prediction across difficulty",
+          "year": 2025,
+          "metrics": {
+            "μcmd_mean_%": 42.6,
+            "μparam_mean_%": 0.55,
+            "PPA_mean_%": 0.68,
+            "PPA_max_%": 10.8,
+            "PPA_min_%": 0.0,
+            "PPA_short_%": 0.83,
+            "PPA_medium_%": 0.69,
+            "PPA_long_%": 0.51
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 3"
+        },
+        {
+          "method": "VPT",
+          "benchmark": "Table 3 - Action prediction across difficulty",
+          "year": 2025,
+          "metrics": {
+            "μcmd_mean_%": 96.25,
+            "μparam_mean_%": 78.72,
+            "PPA_mean_%": 83.81,
+            "PPA_max_%": 100.0,
+            "PPA_min_%": 43.59,
+            "PPA_short_%": 88.51,
+            "PPA_medium_%": 82.77,
+            "PPA_long_%": 80.12
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 3"
+        },
+        {
+          "method": "VideoCADFormer",
+          "benchmark": "Table 3 - Action prediction across difficulty",
+          "year": 2025,
+          "metrics": {
+            "μcmd_mean_%": 98.08,
+            "μparam_mean_%": 82.35,
+            "PPA_mean_%": 87.54,
+            "PPA_max_%": 100.0,
+            "PPA_min_%": 65.67,
+            "PPA_short_%": 90.08,
+            "PPA_medium_%": 87.08,
+            "PPA_long_%": 85.46
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 3"
+        },
+        {
+          "method": "Human Expert",
+          "benchmark": "Table 4 - Chamfer geometric fidelity",
+          "year": 2025,
+          "metrics": {
+            "chamfer_success_short_%": 85.0,
+            "chamfer_success_medium_%": 96.7,
+            "chamfer_success_long_%": 82.8,
+            "chamfer_success_mean_%": 88.2,
+            "mean_CD_short": 0.0097,
+            "mean_CD_medium": 0.0067,
+            "mean_CD_long": 0.0112,
+            "mean_CD_mean": 0.0092,
+            "invalid_mean_%": 0.0
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 4"
+        },
+        {
+          "method": "Random",
+          "benchmark": "Table 4 - Chamfer geometric fidelity",
+          "year": 2025,
+          "metrics": {
+            "chamfer_success_short_%": 2.5,
+            "chamfer_success_medium_%": 0.0,
+            "chamfer_success_long_%": 0.0,
+            "chamfer_success_mean_%": 0.8,
+            "mean_CD_short": 0.1038,
+            "mean_CD_medium": 0.1075,
+            "mean_CD_long": 0.0972,
+            "mean_CD_mean": 0.1028,
+            "invalid_mean_%": null
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 4"
+        },
+        {
+          "method": "VPT",
+          "benchmark": "Table 4 - Chamfer geometric fidelity",
+          "year": 2025,
+          "metrics": {
+            "chamfer_success_short_%": 43.9,
+            "chamfer_success_medium_%": 36.4,
+            "chamfer_success_long_%": 5.9,
+            "chamfer_success_mean_%": 28.5,
+            "mean_CD_short": 0.026,
+            "mean_CD_medium": 0.029,
+            "mean_CD_long": 0.0856,
+            "mean_CD_mean": 0.0473,
+            "invalid_mean_%": 39.5
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 4"
+        },
+        {
+          "method": "VideoCADFormer",
+          "benchmark": "Table 4 - Chamfer geometric fidelity",
+          "year": 2025,
+          "metrics": {
+            "chamfer_success_short_%": 60.6,
+            "chamfer_success_medium_%": 37.9,
+            "chamfer_success_long_%": 25.0,
+            "chamfer_success_mean_%": 41.0,
+            "mean_CD_short": 0.0238,
+            "mean_CD_medium": 0.0286,
+            "mean_CD_long": 0.0592,
+            "mean_CD_mean": 0.0374,
+            "invalid_mean_%": 26.0
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 4"
+        },
+        {
+          "method": "gpt-4.1-2025-04-14",
+          "benchmark": "Table 5 - VideoCAD-VQA across LLMs",
+          "year": 2025,
+          "metrics": {
+            "vqa_action_recognition_%": 84.1,
+            "vqa_frame_ordering_%": 36.0,
+            "vqa_extrusion_number_%": 47.0,
+            "vqa_extrusion_comparison_%": 73.5
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 5"
+        },
+        {
+          "method": "claude-3-7-sonnet-20250219",
+          "benchmark": "Table 5 - VideoCAD-VQA across LLMs",
+          "year": 2025,
+          "metrics": {
+            "vqa_action_recognition_%": 80.1,
+            "vqa_frame_ordering_%": 23.0,
+            "vqa_extrusion_number_%": 37.5,
+            "vqa_extrusion_comparison_%": 80.0
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 5"
+        },
+        {
+          "method": "qwen2.5-vl-72b-instruct",
+          "benchmark": "Table 5 - VideoCAD-VQA across LLMs",
+          "year": 2025,
+          "metrics": {
+            "vqa_action_recognition_%": 78.6,
+            "vqa_frame_ordering_%": 32.5,
+            "vqa_extrusion_number_%": 47.0,
+            "vqa_extrusion_comparison_%": 62.0
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 5"
+        },
+        {
+          "method": "o3-2025-04-16",
+          "benchmark": "Table 5 - VideoCAD-VQA across LLMs",
+          "year": 2025,
+          "metrics": {
+            "vqa_action_recognition_%": 75.1,
+            "vqa_frame_ordering_%": 80.0,
+            "vqa_extrusion_number_%": 45.0,
+            "vqa_extrusion_comparison_%": 71.5
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 5"
+        },
+        {
+          "method": "gemini-2.5-pro-preview-05-06",
+          "benchmark": "Table 5 - VideoCAD-VQA across LLMs",
+          "year": 2025,
+          "metrics": {
+            "vqa_action_recognition_%": 82.6,
+            "vqa_frame_ordering_%": 73.2,
+            "vqa_extrusion_number_%": 38.0,
+            "vqa_extrusion_comparison_%": 71.0
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 5"
+        },
+        {
+          "method": "random",
+          "benchmark": "Table 5 - VideoCAD-VQA across LLMs",
+          "year": 2025,
+          "metrics": {
+            "vqa_action_recognition_%": 40.3,
+            "vqa_frame_ordering_%": 17.4,
+            "vqa_extrusion_number_%": 21.4,
+            "vqa_extrusion_comparison_%": 49.1
+          },
+          "source_url": "https://arxiv.org/html/2505.24838",
+          "source_label": "VideoCAD arXiv:2505.24838, Table 5"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent3",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "bdachat",
+      "name": "BDAChat",
+      "task": "Object-level building damage assessment (instance segmentation + temporal VLM reasoning)",
+      "dataset_id": "BDAChat",
+      "dataset_name": "BDAChat",
+      "page_title": "BDAChat",
+      "summary": "Reported benchmark results for BDAChat (Consensus+full-paper).",
+      "source_url": "https://github.com/WangYong921/BDAChat (README); https://doi.org/10.1016/j.aei.2026.104320 (blocked/paywalled)",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "MF1 (mean F1 over damage classes)",
+      "metric_columns": [
+        {
+          "key": "MF1 (mean F1 over damage classes)",
+          "label": "MF1 (mean F1 over damage classes)",
+          "direction": "higher",
+          "precision": 3
+        }
+      ],
+      "results": [
+        {
+          "method": "BDAChat (proposed, Video-LLaVA-based)",
+          "year": 2026,
+          "metrics": {
+            "MF1_xBD": 0.763,
+            "note": "headline SOTA number on xBD from GitHub README; reported as 'state-of-the-art results on the xBD dataset (MF1 0.763) and demonstrates robust generalization on the unseen event'. No OLBDA-specific numbers exposed in open mirror."
+          },
+          "source_url": "https://github.com/WangYong921/BDAChat",
+          "source_label": "GitHub README (WangYong921/BDAChat)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent4",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "bmkg",
+      "name": "BMKG",
+      "task": "Bridge maintenance decision-making (defect -> maintenance action recommendation) over the Bridge Maintenance Knowledge Graph (BMKG), evaluated via LLM + chain-of-thought reasoning",
+      "dataset_id": "BMKG",
+      "dataset_name": "BMKG",
+      "page_title": "BMKG",
+      "summary": "Reported benchmark results for BMKG (Consensus+full-paper).",
+      "source_url": "abstract_only (via web search snippets of paywalled ScienceDirect page)",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "F1",
+      "metric_columns": [
+        "F1 (standard maintenance queries)",
+        "F1 (ambiguous maintenance queries)"
+      ],
+      "results": [
+        {
+          "method": "BMKG-DCoT (proposed: KG-driven chain-of-thought)",
+          "year": 2025,
+          "metrics": {
+            "F1_standard_maintenance_queries": 0.9529,
+            "F1_ambiguous_maintenance_queries": 0.913
+          },
+          "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0926580525006727",
+          "source_label": "Abstract (paywalled Elsevier article; headline F1 numbers reported in abstract and surfaced via web search snippets)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent4",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "cma",
+      "name": "CMA",
+      "task": "unsafe construction worker action recognition (7 classes, 1595 video clips)",
+      "dataset_id": "CMA",
+      "dataset_name": "CMA",
+      "page_title": "CMA",
+      "summary": "Reported benchmark results for CMA (Consensus+full-paper).",
+      "source_url": "abstract via Consensus + ResearchGate abstract + GitHub README; full-text table NOT read (paywalled)",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "Average Precision (AP)",
+      "metric_columns": [
+        "AP"
+      ],
+      "results": [
+        {
+          "method": "STR-Transformer",
+          "year": 2023,
+          "metrics": {
+            "AP": 0.887
+          },
+          "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0926580522005738",
+          "source_label": "abstract (Automation in Construction, vol 146, 104703)"
+        },
+        {
+          "method": "Baseline model (unspecified)",
+          "year": 2023,
+          "metrics": {
+            "AP": null,
+            "note": "STR-Transformer is 4.0% higher than baseline; baseline AP not stated numerically in abstract"
+          },
+          "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0926580522005738",
+          "source_label": "abstract (Automation in Construction, vol 146, 104703)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent4",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "cppe",
+      "name": "CPPE",
+      "task": "PPE compliance detection (hardhat and safety-vest wear/no-wear) via pose-guided anchoring + shallow CNN classifiers",
+      "dataset_id": "CPPE",
+      "dataset_name": "CPPE",
+      "page_title": "CPPE",
+      "summary": "Reported benchmark results for CPPE (Consensus+full-paper).",
+      "source_url": "https://www.osti.gov/biblio/1809885 (abstract only); https://github.com/ruoxinx/PPE-Detection-Pose (methods/comparators only, no numbers)",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "F1-score",
+      "metric_columns": [
+        "F1-score (hardhat)",
+        "F1-score (safety vest)"
+      ],
+      "results": [
+        {
+          "method": "Pose-guided anchoring (proposed)",
+          "year": 2021,
+          "metrics": {
+            "F1-score (hardhat)": 0.97,
+            "F1-score (safety vest)": 0.95
+          },
+          "source_url": "https://www.osti.gov/biblio/1809885",
+          "source_label": "Abstract (OSTI record of Xiong & Tang, Autom. Constr. 2021, doi:10.1016/j.autcon.2021.103828)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent4",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "component-based-machine-learning-data",
+      "name": "Component_based_Machine_Learning_data",
+      "task": "Building energy performance (heating load) time-series prediction across building shapes (Box/Random/Representative) under sparse training data",
+      "dataset_id": "Component_based_Machine_Learning_data",
+      "dataset_name": "Component_based_Machine_Learning_data",
+      "page_title": "Component_based_Machine_Learning_data",
+      "summary": "Reported benchmark results for Component_based_Machine_Learning_data (Consensus+full-paper).",
+      "source_url": "https://arxiv.org/pdf/2302.10784",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "R2",
+      "metric_columns": [
+        "R2_Box_1.00%",
+        "R2_Rand_1.00%",
+        "R2_Rep_1.00%",
+        "R2_Box_0.10%",
+        "R2_Rand_0.10%",
+        "R2_Rep_0.10%",
+        "R2_Box_0.05%",
+        "R2_Rand_0.05%",
+        "R2_Rep_0.05%",
+        "R2_Box_0.025%",
+        "R2_Rand_0.025%",
+        "R2_Rep_0.025%",
+        "R2_Box_0.0125%",
+        "R2_Rand_0.0125%",
+        "R2_Rep_0.0125%"
+      ],
+      "results": [
+        {
+          "method": "Monolithic ML (LightGBM, Building-level)",
+          "year": 2024,
+          "metrics": {
+            "R2_Box_1.00%": 0.95,
+            "R2_Rand_1.00%": 0.94,
+            "R2_Rep_1.00%": 0.94,
+            "R2_Box_0.10%": 0.84,
+            "R2_Rand_0.10%": 0.81,
+            "R2_Rep_0.10%": 0.82,
+            "R2_Box_0.05%": 0.73,
+            "R2_Rand_0.05%": 0.7,
+            "R2_Rep_0.05%": 0.71,
+            "R2_Box_0.025%": 0.61,
+            "R2_Rand_0.025%": 0.55,
+            "R2_Rep_0.025%": 0.59,
+            "R2_Box_0.0125%": 0.45,
+            "R2_Rand_0.0125%": 0.39,
+            "R2_Rep_0.0125%": 0.39
+          },
+          "source_url": "https://arxiv.org/pdf/2302.10784",
+          "source_label": "arXiv preprint (Chen, Singh, Geyer 2023), Table 2, row marked * (monolithic ML)"
+        },
+        {
+          "method": "CBML Building (component-based, LightGBM)",
+          "year": 2024,
+          "metrics": {
+            "R2_Box_1.00%": 0.88,
+            "R2_Rand_1.00%": 0.91,
+            "R2_Rep_1.00%": 0.9,
+            "R2_Box_0.10%": 0.85,
+            "R2_Rand_0.10%": 0.85,
+            "R2_Rep_0.10%": 0.83,
+            "R2_Box_0.05%": 0.83,
+            "R2_Rand_0.05%": 0.81,
+            "R2_Rep_0.05%": 0.79,
+            "R2_Box_0.025%": 0.77,
+            "R2_Rand_0.025%": 0.76,
+            "R2_Rep_0.025%": 0.73,
+            "R2_Box_0.0125%": 0.68,
+            "R2_Rand_0.0125%": 0.66,
+            "R2_Rep_0.0125%": 0.63
+          },
+          "source_url": "https://arxiv.org/pdf/2302.10784",
+          "source_label": "arXiv preprint (Chen, Singh, Geyer 2023), Table 2, CBML Building row"
+        },
+        {
+          "method": "CBML Ground floor component (LightGBM)",
+          "year": 2024,
+          "metrics": {
+            "R2_Box_1.00%": 0.94,
+            "R2_Rand_1.00%": 0.93,
+            "R2_Rep_1.00%": 0.94,
+            "R2_Box_0.10%": 0.92,
+            "R2_Rand_0.10%": 0.9,
+            "R2_Rep_0.10%": 0.89,
+            "R2_Box_0.05%": 0.89,
+            "R2_Rand_0.05%": 0.87,
+            "R2_Rep_0.05%": 0.87,
+            "R2_Box_0.025%": 0.83,
+            "R2_Rand_0.025%": 0.8,
+            "R2_Rep_0.025%": 0.8,
+            "R2_Box_0.0125%": 0.7,
+            "R2_Rand_0.0125%": 0.68,
+            "R2_Rep_0.0125%": 0.7
+          },
+          "source_url": "https://arxiv.org/pdf/2302.10784",
+          "source_label": "arXiv preprint Table 2, Ground floor row"
+        },
+        {
+          "method": "CBML Infiltration component (LightGBM)",
+          "year": 2024,
+          "metrics": {
+            "R2_Box_1.00%": 0.96,
+            "R2_Rand_1.00%": 0.97,
+            "R2_Rep_1.00%": 0.95,
+            "R2_Box_0.10%": 0.93,
+            "R2_Rand_0.10%": 0.93,
+            "R2_Rep_0.10%": 0.94,
+            "R2_Box_0.05%": 0.92,
+            "R2_Rand_0.05%": 0.92,
+            "R2_Rep_0.05%": 0.89,
+            "R2_Box_0.025%": 0.89,
+            "R2_Rand_0.025%": 0.88,
+            "R2_Rep_0.025%": 0.83,
+            "R2_Box_0.0125%": 0.85,
+            "R2_Rand_0.0125%": 0.85,
+            "R2_Rep_0.0125%": 0.81
+          },
+          "source_url": "https://arxiv.org/pdf/2302.10784",
+          "source_label": "arXiv preprint Table 2, Infiltration row"
+        },
+        {
+          "method": "CBML Roof component (LightGBM)",
+          "year": 2024,
+          "metrics": {
+            "R2_Box_1.00%": 0.95,
+            "R2_Rand_1.00%": 0.96,
+            "R2_Rep_1.00%": 0.96,
+            "R2_Box_0.10%": 0.94,
+            "R2_Rand_0.10%": 0.94,
+            "R2_Rep_0.10%": 0.94,
+            "R2_Box_0.05%": 0.91,
+            "R2_Rand_0.05%": 0.93,
+            "R2_Rep_0.05%": 0.92,
+            "R2_Box_0.025%": 0.88,
+            "R2_Rand_0.025%": 0.87,
+            "R2_Rep_0.025%": 0.87,
+            "R2_Box_0.0125%": 0.7,
+            "R2_Rand_0.0125%": 0.69,
+            "R2_Rep_0.0125%": 0.69
+          },
+          "source_url": "https://arxiv.org/pdf/2302.10784",
+          "source_label": "arXiv preprint Table 2, Roof row"
+        },
+        {
+          "method": "CBML Wall & Window component (LightGBM)",
+          "year": 2024,
+          "metrics": {
+            "R2_Box_1.00%": 0.98,
+            "R2_Rand_1.00%": 0.95,
+            "R2_Rep_1.00%": 0.82,
+            "R2_Box_0.10%": 0.91,
+            "R2_Rand_0.10%": 0.85,
+            "R2_Rep_0.10%": 0.66,
+            "R2_Box_0.05%": 0.84,
+            "R2_Rand_0.05%": 0.73,
+            "R2_Rep_0.05%": 0.39,
+            "R2_Box_0.025%": 0.74,
+            "R2_Rand_0.025%": 0.59,
+            "R2_Rep_0.025%": 0.12,
+            "R2_Box_0.0125%": 0.63,
+            "R2_Rand_0.0125%": 0.46,
+            "R2_Rep_0.0125%": -0.04
+          },
+          "source_url": "https://arxiv.org/pdf/2302.10784",
+          "source_label": "arXiv preprint Table 2, Wall & Window row"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent4",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "shwd",
+      "name": "SHWD",
+      "task": "object detection (helmet wearing / non-wearing)",
+      "dataset_id": "SHWD",
+      "dataset_name": "SHWD",
+      "page_title": "SHWD",
+      "summary": "Reported benchmark results for SHWD (Consensus+full-paper).",
+      "source_url": "https://www.researchsquare.com/article/rs-3924274/latest.pdf",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "mAP@0.5",
+      "metric_columns": [
+        "P/%",
+        "R/%",
+        "mAP@0.5/%",
+        "mAP@0.5:0.95"
+      ],
+      "results": [
+        {
+          "method": "Faster R-CNN",
+          "year": 2024,
+          "metrics": {
+            "P/%": 89.5,
+            "R/%": 80.5,
+            "mAP@0.5/%": 87.4,
+            "mAP@0.5:0.95": 0.541
+          },
+          "source_url": "https://doi.org/10.1038/s41598-024-68446-z",
+          "source_label": "Song et al. 2024, Scientific Reports, Table 2"
+        },
+        {
+          "method": "RFBNet",
+          "year": 2024,
+          "metrics": {
+            "P/%": 82.6,
+            "R/%": 73.4,
+            "mAP@0.5/%": 75.6,
+            "mAP@0.5:0.95": 0.416
+          },
+          "source_url": "https://doi.org/10.1038/s41598-024-68446-z",
+          "source_label": "Song et al. 2024, Scientific Reports, Table 2"
+        },
+        {
+          "method": "YOLOv5",
+          "year": 2024,
+          "metrics": {
+            "P/%": 88.4,
+            "R/%": 78.6,
+            "mAP@0.5/%": 85.7,
+            "mAP@0.5:0.95": 0.554
+          },
+          "source_url": "https://doi.org/10.1038/s41598-024-68446-z",
+          "source_label": "Song et al. 2024, Scientific Reports, Table 2"
+        },
+        {
+          "method": "YOLOX",
+          "year": 2024,
+          "metrics": {
+            "P/%": 91.0,
+            "R/%": 81.7,
+            "mAP@0.5/%": 88.3,
+            "mAP@0.5:0.95": 0.549
+          },
+          "source_url": "https://doi.org/10.1038/s41598-024-68446-z",
+          "source_label": "Song et al. 2024, Scientific Reports, Table 2"
+        },
+        {
+          "method": "YOLOv8",
+          "year": 2024,
+          "metrics": {
+            "P/%": 89.2,
+            "R/%": 79.5,
+            "mAP@0.5/%": 86.5,
+            "mAP@0.5:0.95": 0.542
+          },
+          "source_url": "https://doi.org/10.1038/s41598-024-68446-z",
+          "source_label": "Song et al. 2024, Scientific Reports, Table 2"
+        },
+        {
+          "method": "SSD",
+          "year": 2024,
+          "metrics": {
+            "P/%": 88.3,
+            "R/%": 76.7,
+            "mAP@0.5/%": 84.2,
+            "mAP@0.5:0.95": 0.516
+          },
+          "source_url": "https://doi.org/10.1038/s41598-024-68446-z",
+          "source_label": "Song et al. 2024, Scientific Reports, Table 2 (ref 10)"
+        },
+        {
+          "method": "DAAM-YOLOv5",
+          "year": 2024,
+          "metrics": {
+            "P/%": 87.7,
+            "R/%": 78.6,
+            "mAP@0.5/%": 85.3,
+            "mAP@0.5:0.95": 0.526
+          },
+          "source_url": "https://doi.org/10.1038/s41598-024-68446-z",
+          "source_label": "Song et al. 2024, Scientific Reports, Table 2 (ref 11)"
+        },
+        {
+          "method": "Ours (Improved YOLOv8, DWR+ASPP+NWD)",
+          "year": 2024,
+          "metrics": {
+            "P/%": 91.8,
+            "R/%": 86.6,
+            "mAP@0.5/%": 92.0,
+            "mAP@0.5:0.95": 0.622
+          },
+          "source_url": "https://doi.org/10.1038/s41598-024-68446-z",
+          "source_label": "Song et al. 2024, Scientific Reports, Table 2"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent4",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "conslam",
+      "name": "ConSLAM",
+      "task": "SLAM trajectory evaluation on construction site sequences",
+      "dataset_id": "ConSLAM",
+      "dataset_name": "ConSLAM",
+      "page_title": "ConSLAM",
+      "summary": "Reported benchmark results for ConSLAM (Consensus+full-paper).",
+      "source_url": "Cambridge Apollo repository PDF (open access, accepted manuscript of JCCEE paper), https://www.repository.cam.ac.uk/items/693c260b-e145-4f01-ad88-d2031e4c0590 ; PDF: https://www.repository.cam.ac.uk/bitstreams/ae98fba2-c796-4632-93cc-64896a7e0c00/download",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "APE (Absolute Pose Error), computed via EVO; trajectory drift (qualitative)",
+      "metric_columns": [
+        "method",
+        "sequence",
+        "drift_description"
+      ],
+      "results": [
+        {
+          "method": "LIO-SAM",
+          "year": 2020,
+          "metrics": {
+            "sequence": "5",
+            "drift": "visible translational difference of around half a meter (~0.5 m) in the left part of the trajectory; closely follows ground truth near the start/origin"
+          },
+          "source_url": "https://www.repository.cam.ac.uk/items/693c260b-e145-4f01-ad88-d2031e4c0590",
+          "source_label": "Trzeciak et al., JCCEE 2023, 'ConSLAM: Construction Data Set for SLAM' (doi 10.1061/JCCEE5.CPENG-5212; Cambridge repo 10.17863/CAM.93122), Practical application section, p.19"
+        },
+        {
+          "method": "A-LOAM",
+          "year": 2018,
+          "metrics": {
+            "sequence": "5",
+            "drift": "larger drift than LIO-SAM, resulting in a large deviation from the ground-truth trajectory (no numeric value reported)"
+          },
+          "source_url": "https://www.repository.cam.ac.uk/items/693c260b-e145-4f01-ad88-d2031e4c0590",
+          "source_label": "Trzeciak et al., JCCEE 2023, 'ConSLAM: Construction Data Set for SLAM' (doi 10.1061/JCCEE5.CPENG-5212; Cambridge repo 10.17863/CAM.93122), Practical application section, p.19"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent5",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "construction-activity-scenes",
+      "name": "Construction-Activity-Scenes",
+      "task": "image captioning",
+      "dataset_id": "Construction-Activity-Scenes",
+      "dataset_name": "Construction-Activity-Scenes",
+      "page_title": "Construction-Activity-Scenes",
+      "summary": "Reported benchmark results for Construction-Activity-Scenes (Consensus+full-paper).",
+      "source_url": "https://web.archive.org/web/2023/https://research.bond.edu.au/files/115220106/AM_Manifesting_construction_activity_scenes_via_image_captioning.pdf (PDF, 33 pp, Tables 6 and 8 extracted verbatim)",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "CIDEr-D",
+      "metric_columns": [
+        "CIDEr-D",
+        "Rouge-L",
+        "BLEU-1",
+        "BLEU-2",
+        "BLEU-3",
+        "BLEU-4",
+        "SPICE"
+      ],
+      "results": [
+        {
+          "method": "VGG-16 + LSTM (E#2, config 1) @ Dataset II",
+          "year": 2020,
+          "metrics": {
+            "CIDEr-D": 1.545,
+            "Rouge-L": 0.651,
+            "BLEU-1": 0.658,
+            "BLEU-2": 0.576,
+            "BLEU-3": 0.522,
+            "BLEU-4": 0.482,
+            "SPICE": 0.318
+          },
+          "source_url": "https://research.bond.edu.au/files/115220106/AM_Manifesting_construction_activity_scenes_via_image_captioning.pdf",
+          "source_label": "Liu et al. 2020, Table 8 (open mirror, Bond Univ. Repository / Wayback Machine)"
+        },
+        {
+          "method": "VGG-16 + LSTM (E#2, config 2) @ Dataset II",
+          "year": 2020,
+          "metrics": {
+            "CIDEr-D": 1.508,
+            "Rouge-L": 0.642,
+            "BLEU-1": 0.619,
+            "BLEU-2": 0.511,
+            "BLEU-3": 0.423,
+            "BLEU-4": 0.362,
+            "SPICE": 0.349
+          },
+          "source_url": "https://research.bond.edu.au/files/115220106/AM_Manifesting_construction_activity_scenes_via_image_captioning.pdf",
+          "source_label": "Liu et al. 2020, Table 8 (open mirror, Bond Univ. Repository / Wayback Machine)"
+        },
+        {
+          "method": "ResNet-50 + LSTM (E#3, config 1) @ Dataset II",
+          "year": 2020,
+          "metrics": {
+            "CIDEr-D": 1.605,
+            "Rouge-L": 0.616,
+            "BLEU-1": 0.68,
+            "BLEU-2": 0.595,
+            "BLEU-3": 0.537,
+            "BLEU-4": 0.491,
+            "SPICE": 0.354
+          },
+          "source_url": "https://research.bond.edu.au/files/115220106/AM_Manifesting_construction_activity_scenes_via_image_captioning.pdf",
+          "source_label": "Liu et al. 2020, Table 8 (open mirror, Bond Univ. Repository / Wayback Machine)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent5",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "construction-material-textual",
+      "name": "Construction-Material-Textual",
+      "task": "Image classification of construction material conditions (7 classes: CMU wall, chiseled concrete, concrete, first coat plaster, gypsum, mesh, second coat plaster)",
+      "dataset_id": "Construction-Material-Textual",
+      "dataset_name": "Construction-Material-Textual",
+      "page_title": "Construction-Material-Textual",
+      "summary": "Reported benchmark results for Construction-Material-Textual (Consensus+full-paper).",
+      "source_url": "https://ascelibrary.org/doi/10.1061/JCCEE5.CPENG-5478",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "accuracy (%)",
+      "metric_columns": [
+        "accuracy_limited_%",
+        "accuracy_very_small_%"
+      ],
+      "results": [
+        {
+          "method": "CNN without data augmentation",
+          "year": 2024,
+          "metrics": {
+            "accuracy_limited_%": 51,
+            "accuracy_very_small_%": 30
+          },
+          "source_url": "https://ascelibrary.org/doi/10.1061/JCCEE5.CPENG-5478",
+          "source_label": "Mengiste et al. 2024, J. Comput. Civ. Eng. 38(1):04023036, Table 4, row 1"
+        },
+        {
+          "method": "CNN with data augmentation",
+          "year": 2024,
+          "metrics": {
+            "accuracy_limited_%": 38,
+            "accuracy_very_small_%": 35
+          },
+          "source_url": "https://ascelibrary.org/doi/10.1061/JCCEE5.CPENG-5478",
+          "source_label": "Mengiste et al. 2024, J. Comput. Civ. Eng. 38(1):04023036, Table 4, row 2"
+        },
+        {
+          "method": "CNN with data augmentation + transfer learning",
+          "year": 2024,
+          "metrics": {
+            "accuracy_limited_%": 67,
+            "accuracy_very_small_%": 45
+          },
+          "source_url": "https://ascelibrary.org/doi/10.1061/JCCEE5.CPENG-5478",
+          "source_label": "Mengiste et al. 2024, J. Comput. Civ. Eng. 38(1):04023036, Table 4, row 3"
+        },
+        {
+          "method": "LBP with super learners and data augmentation",
+          "year": 2024,
+          "metrics": {
+            "accuracy_limited_%": 72,
+            "accuracy_very_small_%": 23
+          },
+          "source_url": "https://ascelibrary.org/doi/10.1061/JCCEE5.CPENG-5478",
+          "source_label": "Mengiste et al. 2024, J. Comput. Civ. Eng. 38(1):04023036, Table 4, row 4"
+        },
+        {
+          "method": "GLCM with super learners and data augmentation",
+          "year": 2024,
+          "metrics": {
+            "accuracy_limited_%": 76,
+            "accuracy_very_small_%": 63
+          },
+          "source_url": "https://ascelibrary.org/doi/10.1061/JCCEE5.CPENG-5478",
+          "source_label": "Mengiste et al. 2024, J. Comput. Civ. Eng. 38(1):04023036, Table 4, row 5"
+        },
+        {
+          "method": "GLCM + CNN with transfer learning (proposed model)",
+          "year": 2024,
+          "metrics": {
+            "accuracy_limited_%": 95,
+            "accuracy_very_small_%": 71
+          },
+          "source_url": "https://ascelibrary.org/doi/10.1061/JCCEE5.CPENG-5478",
+          "source_label": "Mengiste et al. 2024, J. Comput. Civ. Eng. 38(1):04023036, Table 4, row 6 (proposed)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent5",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "gdut-hwd",
+      "name": "GDUT-HWD",
+      "task": "hardhat wearing detection (5 classes: blue/white/yellow/red hardhat + none)",
+      "dataset_id": "GDUT-HWD",
+      "dataset_name": "GDUT-HWD",
+      "page_title": "GDUT-HWD",
+      "summary": "Reported benchmark results for GDUT-HWD (Consensus+full-paper).",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S092658051930264X (abstract+highlights only); https://github.com/wujixiu/helmet-detection (model list, no mAP numbers)",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "mAP",
+      "metric_columns": [
+        "mAP"
+      ],
+      "results": [
+        {
+          "method": "SSD-RPA512 (SSD + reverse progressive attention, input 512x512)",
+          "year": 2019,
+          "metrics": {
+            "mAP": "83.89%"
+          },
+          "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S092658051930264X",
+          "source_label": "Wu et al. 2019 abstract/highlights (paywalled full text)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent5",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
+      "id": "thermalnet",
+      "name": "ThermalNet",
+      "task": "thermal-image hand gesture classification (worker-robot collaboration)",
+      "dataset_id": "ThermalNet",
+      "dataset_name": "ThermalNet",
+      "page_title": "ThermalNet",
+      "summary": "Reported benchmark results for ThermalNet (Consensus+full-paper).",
+      "source_url": "https://research.polyu.edu.hk/en/publications/thermal-image-based-hand-gesture-recognition-for-worker-robot-col (abstract only); https://www.sciencedirect.com/science/article/pii/S1474034623000678 (paywalled)",
+      "source_label": "consensus+fullpaper",
+      "primary_metric_key": "accuracy",
+      "metric_columns": [
+        "accuracy",
+        "params"
+      ],
+      "results": [
+        {
+          "method": "Proposed lightweight network (Wu et al., 2023)",
+          "year": 2023,
+          "metrics": {
+            "accuracy": "97.54%",
+            "params": "1.8M"
+          },
+          "source_url": "https://doi.org/10.1016/j.aei.2023.101939",
+          "source_label": "Abstract (Wu et al., 2023, Adv. Eng. Inform.)"
+        }
+      ],
+      "verified": true,
+      "_via": "consensus-agent5",
+      "comparison_scope": "Results sourced from the original publication and associated benchmark.",
+      "split": "test",
+      "protocol": "Metrics reported as in the source publication.",
+      "submission_policy": "Open: results compiled from published papers and public leaderboards."
+    },
+    {
       "id": "topo-loss-crack",
       "name": "TOPO-Loss-Crack: continuity-preserving crack detection dataset",
       "task": "Crack segmentation",
